@@ -6,12 +6,15 @@ import WhatWeDo from './components/WhatWeDo';
 import VisionMission from './components/VisionMission';
 import Gallery from './components/Gallery';
 import Partners from './components/Partners';
-import Donation from './components/Donation';
 import Footer from './components/Footer';
 import GalleryPage from './pages/GalleryPage';
 import HistoryPage from './pages/HistoryPage';
+import DonatePage from './pages/donation/DonatePage';
+import VocationalPage from './pages/donation/VocationalPage';
+import MedicationPage from './pages/donation/MedicationPage';
+import BackToSchoolPage from './pages/donation/BackToSchoolPage';
 
-type Page = 'home' | 'gallery' | 'history';
+type Page = 'home' | 'gallery' | 'history' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -53,11 +56,14 @@ export default function App() {
             <VisionMission />
             <Gallery />
             <Partners />
-            <Donation />
           </>
         )}
         {currentPage === 'gallery' && <GalleryPage />}
         {currentPage === 'history' && <HistoryPage />}
+        {currentPage === 'donate' && <DonatePage onNavigate={handleNavigate} />}
+        {currentPage === 'donate-vocational' && <VocationalPage />}
+        {currentPage === 'donate-medication' && <MedicationPage />}
+        {currentPage === 'donate-backtoschool' && <BackToSchoolPage />}
       </main>
       <Footer onNavigate={handleNavigate} />
     </div>

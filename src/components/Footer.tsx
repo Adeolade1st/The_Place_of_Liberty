@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin, Heart, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
-type Page = 'home' | 'gallery' | 'history';
+type Page = 'home' | 'gallery' | 'history' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool';
 
 interface FooterProps {
   onNavigate: (page: Page, sectionId?: string) => void;
@@ -13,7 +13,13 @@ const quickLinks: { label: string; page?: Page; sectionId?: string }[] = [
   { label: 'Gallery', page: 'gallery' },
   { label: 'Our History', page: 'history' },
   { label: 'Our Partners', sectionId: 'partners' },
-  { label: 'Donate', sectionId: 'donate' },
+  { label: 'Donate', page: 'donate' },
+];
+
+const donateLinks: { label: string; page: Page }[] = [
+  { label: 'Support Our Vocational School', page: 'donate-vocational' },
+  { label: "Sponsor a Child's Medication", page: 'donate-medication' },
+  { label: '"Back to School" Initiative', page: 'donate-backtoschool' },
 ];
 
 const programmes = [
@@ -58,7 +64,6 @@ export default function Footer({ onNavigate }: FooterProps) {
           <p className="text-gray-400 text-sm leading-relaxed mb-5">
             Empowering children with developmental disabilities through quality education, therapy, and compassionate care in Nigeria.
           </p>
-          {/* Socials */}
           <div className="flex gap-3">
             {socials.map(({ icon: Icon, label, href }) => (
               <a
@@ -90,11 +95,24 @@ export default function Footer({ onNavigate }: FooterProps) {
           </ul>
         </div>
 
-        {/* Programmes */}
+        {/* Donate Links */}
         <div>
-          <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-wide">Our Programmes</h4>
-          <ul className="space-y-2">
-            {programmes.map((p) => (
+          <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-wide">Ways to Give</h4>
+          <ul className="space-y-2 mb-6">
+            {donateLinks.map(({ label, page }) => (
+              <li key={page}>
+                <button
+                  onClick={() => { onNavigate(page); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                  className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-200 text-left leading-tight"
+                >
+                  {label}
+                </button>
+              </li>
+            ))}
+          </ul>
+          <h4 className="text-white font-bold mb-3 text-sm uppercase tracking-wide">Our Programmes</h4>
+          <ul className="space-y-1.5">
+            {programmes.slice(0, 4).map((p) => (
               <li key={p} className="text-gray-400 text-sm flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
                 {p}
@@ -126,7 +144,6 @@ export default function Footer({ onNavigate }: FooterProps) {
               </a>
             </li>
           </ul>
-          {/* Newsletter */}
           <div className="mt-6">
             <p className="text-white text-sm font-semibold mb-2">Newsletter</p>
             <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
