@@ -1,17 +1,28 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 
-const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'What We Do', href: '#what-we-do' },
-  { label: 'Vision & Mission', href: '#vision-mission' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Partners', href: '#partners' },
-  { label: 'Donate', href: '#donate' },
+type Page = 'home' | 'gallery' | 'history';
+
+interface NavbarProps {
+  currentPage: Page;
+  onNavigate: (page: Page, sectionId?: string) => void;
+}
+
+const sectionLinks = [
+  { label: 'Home', sectionId: 'home' },
+  { label: 'About', sectionId: 'about' },
+  { label: 'What We Do', sectionId: 'what-we-do' },
+  { label: 'Vision & Mission', sectionId: 'vision-mission' },
+  { label: 'Partners', sectionId: 'partners' },
+  { label: 'Donate', sectionId: 'donate' },
 ];
 
-export default function Navbar() {
+const pageLinks: { label: string; page: Page }[] = [
+  { label: 'Gallery', page: 'gallery' },
+  { label: 'Our History', page: 'history' },
+];
+
+export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,10 +32,19 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const handleNav = (href: string) => {
+  const handleSectionClick = (sectionId: string) => {
     setOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (currentPage !== 'home') {
+      onNavigate('home', sectionId);
+    } else {
+      document.querySelector(`#${sectionId}`)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handlePageClick = (page: Page) => {
+    setOpen(false);
+    onNavigate(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -44,7 +64,7 @@ export default function Navbar() {
           </div>
           <span className="flex items-center gap-1">
             <MapPin size={12} />
-            Lagos, Nigeria
+            1, Alhaji Masha Road, Surulere, Lagos
           </span>
         </div>
       </div>
@@ -53,44 +73,56 @@ export default function Navbar() {
       <nav className={`transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm shadow-sm'}`}>
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
           {/* Logo */}
-          <a
-            href="#home"
-            onClick={(e) => { e.preventDefault(); handleNav('#home'); }}
-            className="flex items-center gap-2"
+          <button
+            onClick={() => handlePageClick('home')}
+            className="flex items-center gap-1 focus:outline-none"
+            aria-label="Go to home"
           >
-            <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">PL</span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="font-bold text-green-800 leading-tight text-sm">The Place of Liberty</p>
-              <p className="text-orange-500 text-xs leading-tight">Nur & Pry School</p>
-            </div>
-          </a>
+            <img
+              src="/pol_logo-removebg-preview.png"
+              alt="Place of Liberty Nursery & Primary School logo"
+              className="h-12 w-auto object-contain"
+            />
+          </button>
 
           {/* Desktop links */}
-          <ul className="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-700">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  onClick={(e) => { e.preventDefault(); handleNav(link.href); }}
-                  className="hover:text-orange-500 transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-orange-500"
+          <ul className="hidden lg:flex items-center gap-5 text-sm font-medium text-gray-700">
+            {sectionLinks.map((link) => (
+              <li key={link.sectionId}>
+                <button
+                  onClick={() => handleSectionClick(link.sectionId)}
+                  className={`hover:text-orange-500 transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-orange-500 ${
+                    currentPage === 'home' ? '' : 'opacity-80'
+                  }`}
                 >
                   {link.label}
-                </a>
+                </button>
+              </li>
+            ))}
+            {pageLinks.map((link) => (
+              <li key={link.page}>
+                <button
+                  onClick={() => handlePageClick(link.page)}
+                  className={`transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-orange-500 ${
+                    currentPage === link.page
+                      ? 'text-orange-500 border-orange-500'
+                      : 'hover:text-orange-500'
+                  }`}
+                >
+                  {link.label}
+                </button>
               </li>
             ))}
           </ul>
 
           {/* CTA + Hamburger */}
           <div className="flex items-center gap-3">
-            <a
-              href="#donate"
-              onClick={(e) => { e.preventDefault(); handleNav('#donate'); }}
+            <button
+              onClick={() => handleSectionClick('donate')}
               className="hidden sm:inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors duration-200"
             >
               Donate Now
-            </a>
+            </button>
             <button
               aria-label="Toggle menu"
               onClick={() => setOpen(!open)}
@@ -104,25 +136,37 @@ export default function Navbar() {
         {/* Mobile menu */}
         <div className={`lg:hidden transition-all duration-300 overflow-hidden ${open ? 'max-h-screen border-t border-gray-100' : 'max-h-0'}`}>
           <ul className="px-4 py-3 flex flex-col gap-1 bg-white">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  onClick={(e) => { e.preventDefault(); handleNav(link.href); }}
-                  className="block py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors"
+            {sectionLinks.map((link) => (
+              <li key={link.sectionId}>
+                <button
+                  onClick={() => handleSectionClick(link.sectionId)}
+                  className="w-full text-left py-2 px-3 rounded-md text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors"
                 >
                   {link.label}
-                </a>
+                </button>
+              </li>
+            ))}
+            {pageLinks.map((link) => (
+              <li key={link.page}>
+                <button
+                  onClick={() => handlePageClick(link.page)}
+                  className={`w-full text-left py-2 px-3 rounded-md text-sm font-medium transition-colors ${
+                    currentPage === link.page
+                      ? 'bg-orange-50 text-orange-600'
+                      : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'
+                  }`}
+                >
+                  {link.label}
+                </button>
               </li>
             ))}
             <li className="pt-2">
-              <a
-                href="#donate"
-                onClick={(e) => { e.preventDefault(); handleNav('#donate'); }}
-                className="block text-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors"
+              <button
+                onClick={() => handleSectionClick('donate')}
+                className="w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors"
               >
                 Donate Now
-              </a>
+              </button>
             </li>
           </ul>
         </div>

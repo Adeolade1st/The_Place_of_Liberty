@@ -1,12 +1,19 @@
 import { Phone, Mail, MapPin, Heart, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
-const quickLinks = [
-  { label: 'About Us', href: '#about' },
-  { label: 'What We Do', href: '#what-we-do' },
-  { label: 'Vision & Mission', href: '#vision-mission' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Our Partners', href: '#partners' },
-  { label: 'Donate', href: '#donate' },
+type Page = 'home' | 'gallery' | 'history';
+
+interface FooterProps {
+  onNavigate: (page: Page, sectionId?: string) => void;
+}
+
+const quickLinks: { label: string; page?: Page; sectionId?: string }[] = [
+  { label: 'About Us', sectionId: 'about' },
+  { label: 'What We Do', sectionId: 'what-we-do' },
+  { label: 'Vision & Mission', sectionId: 'vision-mission' },
+  { label: 'Gallery', page: 'gallery' },
+  { label: 'Our History', page: 'history' },
+  { label: 'Our Partners', sectionId: 'partners' },
+  { label: 'Donate', sectionId: 'donate' },
 ];
 
 const programmes = [
@@ -25,27 +32,29 @@ const socials = [
   { icon: Youtube, label: 'YouTube', href: '#' },
 ];
 
-function handleNav(href: string) {
-  const el = document.querySelector(href);
-  if (el) el.scrollIntoView({ behavior: 'smooth' });
-}
+export default function Footer({ onNavigate }: FooterProps) {
+  const handleLink = (item: typeof quickLinks[0]) => {
+    if (item.page) {
+      onNavigate(item.page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (item.sectionId) {
+      onNavigate('home', item.sectionId);
+    }
+  };
 
-export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 pt-14 pb-10 grid md:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="md:col-span-1">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">PL</span>
-            </div>
-            <div>
-              <p className="font-bold text-white text-sm leading-tight">The Place of Liberty</p>
-              <p className="text-orange-400 text-xs">Nur & Pry School</p>
-            </div>
-          </div>
+          <button onClick={() => onNavigate('home')} className="mb-4 focus:outline-none">
+            <img
+              src="/pol_logo-removebg-preview.png"
+              alt="Place of Liberty Nursery & Primary School"
+              className="h-16 w-auto object-contain brightness-0 invert"
+            />
+          </button>
           <p className="text-gray-400 text-sm leading-relaxed mb-5">
             Empowering children with developmental disabilities through quality education, therapy, and compassionate care in Nigeria.
           </p>
@@ -68,15 +77,14 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-wide">Quick Links</h4>
           <ul className="space-y-2">
-            {quickLinks.map(({ label, href }) => (
-              <li key={href}>
-                <a
-                  href={href}
-                  onClick={(e) => { e.preventDefault(); handleNav(href); }}
-                  className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-200"
+            {quickLinks.map((link) => (
+              <li key={link.label}>
+                <button
+                  onClick={() => handleLink(link)}
+                  className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-200 text-left"
                 >
-                  {label}
-                </a>
+                  {link.label}
+                </button>
               </li>
             ))}
           </ul>
@@ -101,7 +109,9 @@ export default function Footer() {
           <ul className="space-y-3">
             <li className="flex items-start gap-3">
               <MapPin size={16} className="text-orange-500 flex-shrink-0 mt-0.5" />
-              <span className="text-gray-400 text-sm">1 Liberty Road, Surulere, Lagos, Nigeria</span>
+              <span className="text-gray-400 text-sm">
+                1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos
+              </span>
             </li>
             <li className="flex items-center gap-3">
               <Phone size={16} className="text-orange-500 flex-shrink-0" />
@@ -140,10 +150,10 @@ export default function Footer() {
       <div className="border-t border-gray-800 py-5 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} The Place of Liberty Nur & Pry School. All rights reserved.
+            &copy; {new Date().getFullYear()} The Place of Liberty Nursery &amp; Primary School. All rights reserved.
           </p>
           <p className="flex items-center gap-1">
-            Made with <Heart size={12} className="text-orange-500 fill-orange-500" /> for the children of Nigeria
+            Made with <Heart size={12} className="text-orange-500 fill-orange-500 mx-1" /> for the children of Nigeria
           </p>
         </div>
       </div>

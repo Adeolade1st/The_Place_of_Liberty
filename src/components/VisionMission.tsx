@@ -1,10 +1,9 @@
-import { Eye, Target, Star, CheckCircle } from 'lucide-react';
+import { Eye, Target, CheckCircle } from 'lucide-react';
 
-const values = [
-  { label: 'Inclusion', desc: 'Every child belongs and is valued.' },
-  { label: 'Compassion', desc: 'We serve with love, patience, and understanding.' },
-  { label: 'Excellence', desc: 'We commit to the highest standards of care and education.' },
-  { label: 'Integrity', desc: 'We are transparent, ethical, and accountable.' },
+const missions = [
+  'To provide a Christ-centered and safe environment where children of indigent families will be valued, liberated, and inspired to develop and grow spiritually, mentally, and psychologically.',
+  'To transform the lives of the children so that they be given "beauty instead of ashes; the oil of joy instead of sadness; the garment of praise instead of a spirit of heaviness, such that they will be called trees of righteousness; planted by the Lord, that His name will be glorified because of them". (Isa. 61:3)',
+  'To support the parents and family of the children thereby restoring and sustaining in them hope and confidence for the future.',
 ];
 
 export default function VisionMission() {
@@ -24,37 +23,58 @@ export default function VisionMission() {
           </p>
         </div>
 
-        {/* Vision & Mission cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* Vision */}
-          <div className="relative bg-green-800 text-white rounded-2xl p-8 overflow-hidden">
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-green-700 rounded-full opacity-50" />
-            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-green-700 rounded-full opacity-30" />
-            <div className="relative z-10">
-              <div className="w-14 h-14 rounded-xl bg-orange-500 flex items-center justify-center mb-6">
-                <Eye size={26} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-green-100 leading-relaxed text-base">
-                To be Nigeria's foremost centre of excellence for special needs education — a place where every child with developmental disabilities is seen, celebrated, and empowered to realise their God-given potential, contributing meaningfully to society.
+        {/* Vision card */}
+        <div className="relative bg-green-800 text-white rounded-2xl p-8 md:p-10 overflow-hidden mb-8">
+          <div className="absolute -top-8 -right-8 w-40 h-40 bg-green-700 rounded-full opacity-40" />
+          <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-green-700 rounded-full opacity-25" />
+          <div className="relative z-10 flex flex-col md:flex-row md:items-start gap-6">
+            <div className="w-14 h-14 rounded-xl bg-orange-500 flex items-center justify-center flex-shrink-0">
+              <Eye size={26} />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-3">Vision Statement</h3>
+              <p className="text-green-100 leading-relaxed text-base md:text-lg">
+                To provide compassionate care and liberating education to children with special needs in order that they may attain the highest possible levels of their human capacity.
               </p>
             </div>
           </div>
+        </div>
 
-          {/* Mission */}
-          <div className="relative bg-orange-500 text-white rounded-2xl p-8 overflow-hidden">
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-orange-400 rounded-full opacity-50" />
-            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-orange-400 rounded-full opacity-30" />
-            <div className="relative z-10">
-              <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center mb-6">
+        {/* Mission card */}
+        <div className="relative bg-orange-500 text-white rounded-2xl p-8 md:p-10 overflow-hidden mb-16">
+          <div className="absolute -top-8 -right-8 w-40 h-40 bg-orange-400 rounded-full opacity-40" />
+          <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-orange-400 rounded-full opacity-25" />
+          <div className="relative z-10">
+            <div className="flex flex-col md:flex-row md:items-start gap-6 mb-6">
+              <div className="w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
                 <Target size={26} />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-orange-50 leading-relaxed text-base">
-                To provide an inclusive, nurturing, and therapeutically-rich educational environment that equips children with developmental disabilities with the skills, confidence, and independence they need — while supporting their families throughout the journey.
-              </p>
+              <h3 className="text-2xl font-bold self-center">Mission Statements</h3>
+            </div>
+            <div className="space-y-5">
+              {missions.map((m, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="w-7 h-7 rounded-full bg-white/20 flex-shrink-0 flex items-center justify-center text-sm font-bold mt-0.5">
+                    {i + 1}
+                  </div>
+                  <p className="text-orange-50 leading-relaxed text-sm md:text-base">{m}</p>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
+
+        {/* Memorial section */}
+        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10 text-center mb-16">
+          <div className="w-12 h-1 bg-orange-400 mx-auto rounded-full mb-6" />
+          <p className="text-gray-500 text-sm uppercase tracking-widest mb-3 font-semibold">In Loving Memory</p>
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+            The Very Reverend Akinola &amp; Mrs. Modupe Oluwole
+          </h3>
+          <p className="text-gray-500 text-sm leading-relaxed max-w-xl mx-auto">
+            This school stands as a testament to their faith, love, and vision for children who needed a place of liberty, hope, and light.
+          </p>
+          <div className="w-12 h-1 bg-green-700 mx-auto rounded-full mt-6" />
         </div>
 
         {/* Core Values */}
@@ -67,7 +87,13 @@ export default function VisionMission() {
               Our Core Values
             </h3>
             <div className="space-y-4">
-              {values.map(({ label, desc }) => (
+              {[
+                { label: 'Inclusion', desc: 'Every child belongs and is valued.' },
+                { label: 'Compassion', desc: 'We serve with love, patience, and understanding.' },
+                { label: 'Excellence', desc: 'We commit to the highest standards of care and education.' },
+                { label: 'Integrity', desc: 'We are transparent, ethical, and accountable.' },
+                { label: 'Faith', desc: 'Grounded in Christ-centered principles of service and love.' },
+              ].map(({ label, desc }) => (
                 <div key={label} className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-orange-50 transition-colors duration-200 group">
                   <CheckCircle size={22} className="text-orange-500 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                   <div>
@@ -83,15 +109,9 @@ export default function VisionMission() {
             <img
               src="https://images.pexels.com/photos/8363104/pexels-photo-8363104.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Teacher and child"
-              className="rounded-2xl w-full h-80 md:h-96 object-cover shadow-xl"
+              className="rounded-2xl w-full h-80 md:h-[420px] object-cover shadow-xl"
             />
-            {/* Quote overlay */}
             <div className="absolute -bottom-6 -left-6 md:-left-8 bg-white rounded-2xl p-5 shadow-xl max-w-xs border-l-4 border-orange-500">
-              <div className="flex gap-1 mb-2">
-                {[1, 2, 3, 4, 5].map((s) => (
-                  <Star key={s} size={14} className="text-orange-400 fill-orange-400" />
-                ))}
-              </div>
               <p className="text-gray-700 text-sm italic leading-relaxed">
                 "Every child who walks through our doors carries immense potential waiting to be unlocked."
               </p>
@@ -103,3 +123,6 @@ export default function VisionMission() {
     </section>
   );
 }
+
+
+export default VisionMission
