@@ -123,6 +123,3 @@ export default function VisionMission() {
     </section>
   );
 }
-
-
-export default VisionMission
