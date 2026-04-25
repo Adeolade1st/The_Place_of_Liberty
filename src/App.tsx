@@ -9,12 +9,28 @@ import Partners from './components/Partners';
 import Footer from './components/Footer';
 import GalleryPage from './pages/GalleryPage';
 import HistoryPage from './pages/HistoryPage';
+import ContactPage from './pages/ContactPage';
 import DonatePage from './pages/donation/DonatePage';
 import VocationalPage from './pages/donation/VocationalPage';
 import MedicationPage from './pages/donation/MedicationPage';
 import BackToSchoolPage from './pages/donation/BackToSchoolPage';
+import SpecialEdPage from './pages/offer/SpecialEdPage';
+import VocationalOfferPage from './pages/offer/VocationalOfferPage';
+import TherapyPage from './pages/offer/TherapyPage';
 
-type Page = 'home' | 'gallery' | 'history' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool';
+type Page =
+  | 'home'
+  | 'gallery'
+  | 'history'
+  | 'contact'
+  | 'who-about'
+  | 'offer-special-ed'
+  | 'offer-vocational'
+  | 'offer-therapy'
+  | 'donate'
+  | 'donate-vocational'
+  | 'donate-medication'
+  | 'donate-backtoschool';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -52,7 +68,7 @@ export default function App() {
           <>
             <Hero />
             <About />
-            <WhatWeDo />
+            <WhatWeDo onNavigate={handleNavigate} />
             <VisionMission />
             <Gallery />
             <Partners />
@@ -60,6 +76,16 @@ export default function App() {
         )}
         {currentPage === 'gallery' && <GalleryPage />}
         {currentPage === 'history' && <HistoryPage />}
+        {currentPage === 'contact' && <ContactPage />}
+        {currentPage === 'who-about' && (
+          <>
+            <About />
+            <div className="pt-20"><VisionMission /></div>
+          </>
+        )}
+        {currentPage === 'offer-special-ed' && <SpecialEdPage />}
+        {currentPage === 'offer-vocational' && <VocationalOfferPage />}
+        {currentPage === 'offer-therapy' && <TherapyPage />}
         {currentPage === 'donate' && <DonatePage onNavigate={handleNavigate} />}
         {currentPage === 'donate-vocational' && <VocationalPage />}
         {currentPage === 'donate-medication' && <MedicationPage />}

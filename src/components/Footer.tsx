@@ -1,18 +1,19 @@
 import { Phone, Mail, MapPin, Heart, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
-type Page = 'home' | 'gallery' | 'history' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool';
+type Page = 'home' | 'gallery' | 'history' | 'contact' | 'who-about' | 'offer-special-ed' | 'offer-vocational' | 'offer-therapy' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool';
 
 interface FooterProps {
   onNavigate: (page: Page, sectionId?: string) => void;
 }
 
 const quickLinks: { label: string; page?: Page; sectionId?: string }[] = [
-  { label: 'About Us', sectionId: 'about' },
-  { label: 'What We Do', sectionId: 'what-we-do' },
-  { label: 'Vision & Mission', sectionId: 'vision-mission' },
-  { label: 'Gallery', page: 'gallery' },
+  { label: 'About Us', page: 'who-about' },
   { label: 'Our History', page: 'history' },
+  { label: 'Vision & Mission', page: 'who-about' },
+  { label: 'What We Offer', sectionId: 'what-we-do' },
+  { label: 'Gallery', page: 'gallery' },
   { label: 'Our Partners', sectionId: 'partners' },
+  { label: 'Contact Us', page: 'contact' },
   { label: 'Donate', page: 'donate' },
 ];
 

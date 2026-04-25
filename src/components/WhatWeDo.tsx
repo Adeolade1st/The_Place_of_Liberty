@@ -1,45 +1,45 @@
-import { Brain, Palette, Music, Activity, BookOpen, Users } from 'lucide-react';
+import { GraduationCap, Briefcase, Stethoscope, ArrowRight } from 'lucide-react';
+
+type Page = 'home' | 'gallery' | 'history' | 'contact' | 'who-about' | 'offer-special-ed' | 'offer-vocational' | 'offer-therapy' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool';
+
+interface Props {
+  onNavigate?: (page: Page) => void;
+}
 
 const services = [
   {
-    icon: Brain,
+    page: 'offer-special-ed' as Page,
+    icon: GraduationCap,
     title: 'Special Education',
-    desc: 'Individualised academic programs designed around each child\'s unique learning style, pace, and cognitive abilities.',
+    sub: 'Montessori Standard',
+    desc: 'Individualised Montessori-based academic programmes designed around each child\'s unique learning style, pace, and cognitive abilities.',
     color: 'bg-orange-50 text-orange-600',
+    border: 'border-orange-200',
+    accent: 'bg-orange-500',
   },
   {
-    icon: Activity,
-    title: 'Occupational Therapy',
-    desc: 'Hands-on therapy sessions that develop fine motor skills, daily living skills, and sensory integration.',
+    page: 'offer-vocational' as Page,
+    icon: Briefcase,
+    title: 'Vocational Training',
+    sub: 'Skills & Empowerment',
+    desc: 'Life-skills coaching, specialised vocational tracks, and "Startup Kits" that transform graduates into economically independent adults.',
     color: 'bg-green-50 text-green-700',
+    border: 'border-green-200',
+    accent: 'bg-green-700',
   },
   {
-    icon: BookOpen,
-    title: 'Speech & Language',
-    desc: 'Professional speech therapy to improve communication, language development, and social interaction skills.',
+    page: 'offer-therapy' as Page,
+    icon: Stethoscope,
+    title: 'Therapy',
+    sub: 'Physio, Occupational & Speech',
+    desc: 'A holistic therapeutic team providing physiotherapy, occupational therapy, and speech & language therapy tailored to each child\'s needs.',
     color: 'bg-blue-50 text-blue-600',
-  },
-  {
-    icon: Palette,
-    title: 'Art & Creative Therapy',
-    desc: 'Creative expression through art, drawing, and craft therapy to boost confidence and emotional wellbeing.',
-    color: 'bg-amber-50 text-amber-600',
-  },
-  {
-    icon: Music,
-    title: 'Music Therapy',
-    desc: 'Evidence-based music therapy sessions that support emotional regulation, memory, and social skills.',
-    color: 'bg-rose-50 text-rose-600',
-  },
-  {
-    icon: Users,
-    title: 'Parental Support',
-    desc: 'Counselling, workshops, and home-support programs to equip families with skills to support their children.',
-    color: 'bg-teal-50 text-teal-600',
+    border: 'border-blue-200',
+    accent: 'bg-blue-600',
   },
 ];
 
-export default function WhatWeDo() {
+export default function WhatWeDo({ onNavigate }: Props) {
   return (
     <section id="what-we-do" className="bg-gray-50 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
@@ -49,7 +49,7 @@ export default function WhatWeDo() {
             Our Services
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What We Do
+            What We Offer
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
             We offer a comprehensive range of specialised educational and therapeutic services tailored to meet the diverse needs of every child in our care.
@@ -58,16 +58,25 @@ export default function WhatWeDo() {
 
         {/* Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map(({ icon: Icon, title, desc, color }) => (
+          {services.map(({ page, icon: Icon, title, sub, desc, color, border, accent }) => (
             <div
               key={title}
-              className="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1 border border-gray-100"
+              className={`bg-white rounded-2xl p-7 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1 border ${border} flex flex-col`}
             >
               <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-5 ${color} group-hover:scale-110 transition-transform duration-300`}>
                 <Icon size={26} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">{title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-0.5">{title}</h3>
+              <p className={`text-xs font-semibold uppercase tracking-wide mb-3 ${color.split(' ')[1]}`}>{sub}</p>
+              <p className="text-gray-500 text-sm leading-relaxed flex-1">{desc}</p>
+              {onNavigate && (
+                <button
+                  onClick={() => onNavigate(page)}
+                  className={`mt-5 inline-flex items-center gap-1.5 text-xs font-semibold ${color.split(' ')[1]} hover:gap-2.5 transition-all duration-200`}
+                >
+                  Learn more <ArrowRight size={13} />
+                </button>
+              )}
             </div>
           ))}
         </div>
@@ -93,3 +102,6 @@ export default function WhatWeDo() {
     </section>
   );
 }
+
+
+export default WhatWeDo
