@@ -102,6 +102,3 @@ export default function WhatWeDo({ onNavigate }: Props) {
     </section>
   );
 }
-
-
-export default WhatWeDo
