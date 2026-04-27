@@ -139,14 +139,14 @@ export default function Footer({ onNavigate }: FooterProps) {
                   +234 806 063 6704
                 </a>
                 <a href="tel:+2348023126250" className="text-gray-400 hover:text-orange-400 text-sm transition-colors block">
-                  +234 802 312 6250
+                  +234 802 312 6250, +234 806 063 6704
                 </a>
               </div>
             </li>
             <li className="flex items-center gap-3">
               <Mail size={16} className="text-orange-500 flex-shrink-0" />
               <a href="mailto:info@theplaceofiberty.edu.ng" className="text-gray-400 hover:text-orange-400 text-sm transition-colors break-all">
-                info@theplaceofiberty.edu.ng
+                example@pol.edu.ng
               </a>
             </li>
           </ul>
