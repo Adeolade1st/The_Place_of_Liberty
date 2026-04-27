@@ -1,9 +1,9 @@
 import { GraduationCap, CheckCircle, BookOpen, Users, Star, Award } from 'lucide-react';
 
 const stats = [
-  { icon: Users, value: '120+', label: 'Children Enrolled', sub: 'across all programmes' },
+  { icon: Users, value: '39', label: 'Children Enrolled', sub: 'across all programmes' },
   { icon: Star, value: '95%', label: 'Progress Rate', sub: 'showing measurable improvement' },
-  { icon: Award, value: '8+', label: 'Years of Excellence', sub: 'in special education' },
+  { icon: Award, value: '5+', label: 'Years of Excellence', sub: 'in special education' },
   { icon: BookOpen, value: '1:4', label: 'Teacher-Child Ratio', sub: 'for personalised attention' },
 ];
 
