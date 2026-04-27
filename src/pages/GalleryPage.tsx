@@ -99,7 +99,7 @@ export default function GalleryPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.92)), url(https://images.pexels.com/photos/8613320/pexels-photo-8613320.jpeg?auto=compress&cs=tinysrgb&w=1600)`,
+          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93)), url('/pics1.JPG')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
