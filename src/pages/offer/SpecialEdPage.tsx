@@ -104,25 +104,6 @@ export default function SpecialEdPage() {
             ))}
           </div>
         </div>
-
-        {/* Levels */}
-        <div className="bg-gray-50 rounded-2xl p-8 mb-16 border border-gray-100">
-          <h3 className="font-bold text-gray-900 text-lg mb-6">Academic Levels Offered</h3>
-          <div className="grid sm:grid-cols-3 gap-4">
-            {[
-              { level: 'Nursery 1 & 2', age: 'Ages 2 – 4', desc: 'Sensory exploration, language foundation, and gross/fine motor development.' },
-              { level: 'Primary 1 – 3', age: 'Ages 5 – 8', desc: 'Literacy, numeracy, and core academic skills through hands-on Montessori materials.' },
-              { level: 'Primary 4 – 6', age: 'Ages 9 – 12', desc: 'Advanced academic content, critical thinking, and preparation for secondary transition.' },
-            ].map(({ level, age, desc }) => (
-              <div key={level} className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
-                <div className="text-orange-500 font-bold text-sm mb-0.5">{age}</div>
-                <div className="font-bold text-gray-900 mb-2">{level}</div>
-                <p className="text-gray-500 text-xs leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* CTA */}
         <div className="bg-orange-500 text-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
