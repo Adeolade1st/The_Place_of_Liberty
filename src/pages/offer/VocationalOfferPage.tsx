@@ -10,7 +10,6 @@ const stats = [
 const tracks = [
   { name: 'Tailoring & Fashion Design', desc: 'From basic sewing to fashion production and garment finishing.' },
   { name: 'Catering & Baking', desc: 'Food preparation, commercial baking, and hospitality skills.' },
-  { name: 'Digital Skills & ICT', desc: 'Computer literacy, graphic design, and digital communication.' },
   { name: 'Craft & Beadwork', desc: 'Jewellery production, bead artistry, and handmade crafts.' },
   { name: 'Soap & Cosmetics Making', desc: 'Formulation, packaging, and selling personal care products.' },
   { name: 'Hair Care & Braiding', desc: 'Professional hair care techniques for the Nigerian market.' },
