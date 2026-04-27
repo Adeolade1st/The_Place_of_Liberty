@@ -15,6 +15,12 @@ const tracks = [
   { name: 'Soap & Cosmetics Making', desc: 'Formulation, packaging, and selling personal care products.' },
   { name: 'Hair Care & Braiding', desc: 'Professional hair care techniques for the Nigerian market.' },
   { name: 'Shoe Making & Cobbling', desc: 'Designing, constructing, and repairing footwear.' },
+  { name: 'Agriculture & Horticulture', desc: 'Small-scale farming, container gardening, and produce sales.' },
+  { name: 'Furniture & Woodwork', desc: 'Carpentry, furniture making, and wood finishing skills.' },
+  { name: 'Electrical Repairs', desc: 'Basic electrical faultfinding and domestic appliance repair.' },
+  { name: 'Phone & Electronics Repair', desc: 'Smartphone and electronic device maintenance and repair.' },
+  { name: 'Business Management', desc: 'Financial literacy, record keeping, and business plannin.' },
+];
 
 const launchpadFeatures = [
   'Personalised business plan development',
