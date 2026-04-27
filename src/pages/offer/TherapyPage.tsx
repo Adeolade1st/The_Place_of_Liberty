@@ -65,7 +65,7 @@ export default function TherapyPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.93)), url(https://images.pexels.com/photos/8363104/pexels-photo-8363104.jpeg?auto=compress&cs=tinysrgb&w=1600)`,
+          backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.93)), url('/physiotime.jpeg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
