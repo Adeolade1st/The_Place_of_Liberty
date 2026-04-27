@@ -45,4 +45,51 @@
       transform: translateY(0);
     }
   }
+
+  .sr-hidden {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .sr-hidden-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .sr-hidden-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .sr-hidden-scale {
+    opacity: 0;
+    transform: scale(0.94);
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .sr-visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .sr-stagger > * {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .sr-stagger.sr-visible > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0ms; }
+  .sr-stagger.sr-visible > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 80ms; }
+  .sr-stagger.sr-visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 160ms; }
+  .sr-stagger.sr-visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 240ms; }
+  .sr-stagger.sr-visible > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 320ms; }
+  .sr-stagger.sr-visible > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 400ms; }
 }

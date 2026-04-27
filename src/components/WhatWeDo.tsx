@@ -1,4 +1,5 @@
 import { GraduationCap, Briefcase, Stethoscope, ArrowRight } from 'lucide-react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 type Page = 'home' | 'gallery' | 'history' | 'contact' | 'who-about' | 'offer-special-ed' | 'offer-vocational' | 'offer-therapy' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool';
 
@@ -40,11 +41,15 @@ const services = [
 ];
 
 export default function WhatWeDo({ onNavigate }: Props) {
+  const headerRef = useScrollReveal<HTMLDivElement>();
+  const cardsRef = useScrollReveal<HTMLDivElement>();
+  const ctaRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="what-we-do" className="bg-gray-50 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div ref={headerRef} className="text-center mb-14 sr-hidden">
           <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-2">
             Our Services
           </p>
@@ -57,7 +62,7 @@ export default function WhatWeDo({ onNavigate }: Props) {
         </div>
 
         {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={cardsRef} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sr-stagger sr-hidden">
           {services.map(({ page, icon: Icon, title, sub, desc, color, border, accent }) => (
             <div
               key={title}
@@ -82,7 +87,7 @@ export default function WhatWeDo({ onNavigate }: Props) {
         </div>
 
         {/* Bottom CTA strip */}
-        <div className="mt-14 bg-green-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 text-white">
+        <div ref={ctaRef} className="mt-14 bg-green-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 text-white sr-hidden">
           <div>
             <h3 className="text-xl md:text-2xl font-bold mb-2">
               Ready to enrol your child?

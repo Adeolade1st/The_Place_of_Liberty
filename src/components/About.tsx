@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Heart, Award, Users, BookOpen } from 'lucide-react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const stats = [
   { icon: BookOpen, value: 39, label: 'Children Enrolled', suffix: '' },
@@ -46,11 +47,15 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 }
 
 export default function About() {
+  const statsRef = useScrollReveal<HTMLDivElement>();
+  const imagesRef = useScrollReveal<HTMLDivElement>();
+  const textRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="about" className="pt-20">
       {/* Stats banner */}
       <div className="bg-green-800 text-white py-10">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div ref={statsRef} className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 sr-stagger sr-hidden">
           {stats.map(({ icon: Icon, value, label, suffix }) => (
             <div key={label} className="text-center">
               <div className="flex justify-center mb-2">
@@ -69,7 +74,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Images */}
-          <div className="relative">
+          <div ref={imagesRef} className="relative sr-hidden-left">
             <div className="grid grid-cols-2 gap-4">
               <img
                 src="/Playtime.jpeg"
@@ -100,7 +105,7 @@ export default function About() {
           </div>
 
           {/* Text */}
-          <div>
+          <div ref={textRef} className="sr-hidden-right">
             <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-2">
               Welcome to The Place of Liberty
             </p>

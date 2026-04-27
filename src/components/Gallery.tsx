@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const images = [
   {
@@ -48,12 +49,14 @@ const images = [
 
 export default function Gallery() {
   const [lightbox, setLightbox] = useState<string | null>(null);
+  const headerRef = useScrollReveal<HTMLDivElement>();
+  const gridRef = useScrollReveal<HTMLDivElement>();
 
   return (
     <section id="gallery" className="bg-gray-50 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div ref={headerRef} className="text-center mb-12 sr-hidden">
           <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-2">
             Our Moments
           </p>
@@ -64,7 +67,7 @@ export default function Gallery() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[200px]">
+        <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[200px] sr-hidden">
           {images.map((img, i) => (
             <div
               key={i}

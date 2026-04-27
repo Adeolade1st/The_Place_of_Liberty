@@ -1,4 +1,5 @@
 import { Eye, Target, CheckCircle } from 'lucide-react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const missions = [
   'To provide a Christ-centered and safe environment where children of indigent families will be valued, liberated, and inspired to develop and grow spiritually, mentally, and psychologically.',
@@ -7,11 +8,18 @@ const missions = [
 ];
 
 export default function VisionMission() {
+  const headerRef = useScrollReveal<HTMLDivElement>();
+  const visionRef = useScrollReveal<HTMLDivElement>();
+  const missionRef = useScrollReveal<HTMLDivElement>();
+  const memorialRef = useScrollReveal<HTMLDivElement>();
+  const valuesLeftRef = useScrollReveal<HTMLDivElement>();
+  const valuesRightRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="vision-mission" className="py-16 md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div ref={headerRef} className="text-center mb-14 sr-hidden">
           <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-2">
             Our Purpose
           </p>
@@ -24,7 +32,7 @@ export default function VisionMission() {
         </div>
 
         {/* Vision card */}
-        <div className="relative bg-green-800 text-white rounded-2xl p-8 md:p-10 overflow-hidden mb-8">
+        <div ref={visionRef} className="relative bg-green-800 text-white rounded-2xl p-8 md:p-10 overflow-hidden mb-8 sr-hidden-left">
           <div className="absolute -top-8 -right-8 w-40 h-40 bg-green-700 rounded-full opacity-40" />
           <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-green-700 rounded-full opacity-25" />
           <div className="relative z-10 flex flex-col md:flex-row md:items-start gap-6">
@@ -41,7 +49,7 @@ export default function VisionMission() {
         </div>
 
         {/* Mission card */}
-        <div className="relative bg-orange-500 text-white rounded-2xl p-8 md:p-10 overflow-hidden mb-16">
+        <div ref={missionRef} className="relative bg-orange-500 text-white rounded-2xl p-8 md:p-10 overflow-hidden mb-16 sr-hidden-right">
           <div className="absolute -top-8 -right-8 w-40 h-40 bg-orange-400 rounded-full opacity-40" />
           <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-orange-400 rounded-full opacity-25" />
           <div className="relative z-10">
@@ -65,7 +73,7 @@ export default function VisionMission() {
         </div>
 
         {/* Memorial section */}
-        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10 text-center mb-16">
+        <div ref={memorialRef} className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10 text-center mb-16 sr-hidden-scale">
           <div className="w-12 h-1 bg-orange-400 mx-auto rounded-full mb-6" />
           <p className="text-gray-500 text-sm uppercase tracking-widest mb-3 font-semibold">In Loving Memory</p>
           <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
@@ -79,7 +87,7 @@ export default function VisionMission() {
 
         {/* Core Values */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
+          <div ref={valuesLeftRef} className="sr-hidden-left">
             <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-2">
               What Drives Us
             </p>
@@ -105,7 +113,7 @@ export default function VisionMission() {
             </div>
           </div>
 
-          <div className="relative">
+          <div ref={valuesRightRef} className="relative sr-hidden-right">
             <img
               src="/mr.oluwole1.png"
               alt="Teacher and child"

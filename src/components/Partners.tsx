@@ -1,4 +1,5 @@
 import { Handshake } from 'lucide-react';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const partners = [
   {
@@ -25,11 +26,16 @@ const testimonials = [
 ];
 
 export default function Partners() {
+  const headerRef = useScrollReveal<HTMLDivElement>();
+  const logosRef = useScrollReveal<HTMLDivElement>();
+  const ctaRef = useScrollReveal<HTMLDivElement>();
+  const testimonialsRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="partners" className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div ref={headerRef} className="text-center mb-12 sr-hidden">
           <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-2">
             Our Community
           </p>
@@ -40,7 +46,7 @@ export default function Partners() {
         </div>
 
         {/* Partner logos */}
-        <div className="flex flex-wrap justify-center gap-10 mb-16">
+        <div ref={logosRef} className="flex flex-wrap justify-center gap-10 mb-16 sr-stagger sr-hidden">
           {partners.map(({ name, logo }) => (
             <div
               key={name}
@@ -57,7 +63,7 @@ export default function Partners() {
         </div>
 
         {/* Partnership CTA */}
-        <div className="bg-green-800 rounded-2xl p-8 md:p-10 mb-16 flex flex-col md:flex-row items-center justify-between gap-6 text-white">
+        <div ref={ctaRef} className="bg-green-800 rounded-2xl p-8 md:p-10 mb-16 flex flex-col md:flex-row sr-hidden items-center justify-between gap-6 text-white">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-orange-500 flex-shrink-0 flex items-center justify-center">
               <Handshake size={24} />
@@ -78,7 +84,7 @@ export default function Partners() {
         </div>
 
         {/* Testimonials */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div ref={testimonialsRef} className="grid md:grid-cols-2 gap-6 sr-stagger sr-hidden">
           {testimonials.map(({ quote, author, role }) => (
             <div key={author} className="bg-gray-50 rounded-2xl p-7 border border-gray-100 relative">
               <div className="text-5xl text-orange-300 font-serif leading-none mb-3">"</div>

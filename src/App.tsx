@@ -6,6 +6,7 @@ import WhatWeDo from './components/WhatWeDo';
 import VisionMission from './components/VisionMission';
 import Gallery from './components/Gallery';
 import Partners from './components/Partners';
+import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import GalleryPage from './pages/GalleryPage';
 import HistoryPage from './pages/HistoryPage';
@@ -71,6 +72,7 @@ export default function App() {
             <WhatWeDo onNavigate={handleNavigate} />
             <VisionMission />
             <Gallery />
+            <Testimonials />
             <Partners />
           </>
         )}
