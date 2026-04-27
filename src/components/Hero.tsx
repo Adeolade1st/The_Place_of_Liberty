@@ -17,7 +17,7 @@ const slides = [
       'At The Place of Liberty, we believe inclusive education transforms lives, families, and communities across Nigeria.',
   },
   {
-    image: '/class.jpeg',
+    image: '/teach.JPG',
     title: 'Together We Build',
     highlight: 'Brighter Futures',
     subtitle:
