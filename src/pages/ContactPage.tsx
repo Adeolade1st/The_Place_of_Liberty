@@ -17,13 +17,13 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email Address',
-    lines: ['info@th.edu.ng', 'admissions@theplaceofiberty.edu.ng'],
+    lines: ['example@pol.edu.ng', 'admissions@theplaceofiberty.edu.ng'],
     color: 'bg-blue-50 text-blue-600',
   },
   {
     icon: Clock,
     title: 'School Hours',
-    lines: ['Mon – Fri: 7:30 AM – 3:30 PM', 'Sat – Sun: Closed'],
+    lines: ['Mon – Fri: 7:30 AM – 3:00 PM', 'Sat – Sun: Closed'],
     color: 'bg-amber-50 text-amber-600',
   },
 ];
