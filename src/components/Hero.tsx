@@ -3,21 +3,21 @@ import { ChevronDown } from 'lucide-react';
 
 const slides = [
   {
-    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/Happy_boy.png',
     title: 'Every Child Deserves',
     highlight: 'A Chance To Thrive',
     subtitle:
       'We provide a safe, nurturing environment where children with developmental disabilities discover their unique abilities and reach their full potential.',
   },
   {
-    image: 'https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/Playtime.jpeg',
     title: 'Education Is',
     highlight: 'A Right, Not A Privilege',
     subtitle:
       'At The Place of Liberty, we believe inclusive education transforms lives, families, and communities across Nigeria.',
   },
   {
-    image: 'https://images.pexels.com/photos/3769714/pexels-photo-3769714.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: '/class.jpeg',
     title: 'Together We Build',
     highlight: 'Brighter Futures',
     subtitle:

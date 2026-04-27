@@ -132,11 +132,16 @@ export default function Footer({ onNavigate }: FooterProps) {
                 1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos
               </span>
             </li>
-            <li className="flex items-center gap-3">
-              <Phone size={16} className="text-orange-500 flex-shrink-0" />
-              <a href="tel:+2348000000000" className="text-gray-400 hover:text-orange-400 text-sm transition-colors">
-                +234 (0) 800 000 0000
-              </a>
+            <li className="flex items-start gap-3">
+              <Phone size={16} className="text-orange-500 flex-shrink-0 mt-0.5" />
+              <div>
+                <a href="tel:+2348060636704" className="text-gray-400 hover:text-orange-400 text-sm transition-colors block">
+                  +234 806 063 6704
+                </a>
+                <a href="tel:+2348023126250" className="text-gray-400 hover:text-orange-400 text-sm transition-colors block">
+                  +234 802 312 6250
+                </a>
+              </div>
             </li>
             <li className="flex items-center gap-3">
               <Mail size={16} className="text-orange-500 flex-shrink-0" />

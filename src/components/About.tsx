@@ -72,22 +72,22 @@ export default function About() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.pexels.com/photos/8613320/pexels-photo-8613320.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/Playtime.jpeg"
                 alt="Children learning"
                 className="rounded-2xl w-full h-56 object-cover shadow-lg"
               />
               <img
-                src="https://images.pexels.com/photos/5212695/pexels-photo-5212695.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/class.jpeg"
                 alt="Teacher with students"
                 className="rounded-2xl w-full h-56 object-cover shadow-lg mt-8"
               />
               <img
-                src="https://images.pexels.com/photos/8613060/pexels-photo-8613060.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Art therapy"
-                className="rounded-2xl w-full h-48 object-cover shadow-lg -mt-4"
+                src="/Happy_boy.png"
+                alt="Happy child"
+                className="rounded-2xl w-full h-48 object-cover object-top shadow-lg -mt-4"
               />
               <img
-                src="https://images.pexels.com/photos/3769983/pexels-photo-3769983.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/Playtime.jpeg"
                 alt="Children playing"
                 className="rounded-2xl w-full h-48 object-cover shadow-lg mt-4"
               />
@@ -108,10 +108,10 @@ export default function About() {
               Nurturing Every Child's <span className="text-green-700">Unique Potential</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              The Place of Liberty Nursery and Primary School is a specialist educational institution dedicated to children with developmental disabilities in Nigeria. Founded on the belief that every child — regardless of ability — deserves quality education, love, and opportunity.
+              Place of Liberty is a <span className="font-semibold text-gray-800">free nursery and primary school</span> dedicated to children with special needs from indigent families in Lagos, Nigeria. The school is powered by the Anglican Diocese of Lagos Mainland and supported by CM Life and the Oluwole Family.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              We provide a structured, inclusive learning environment staffed by trained special-education teachers, therapists, and care workers who are passionate about child development. Our holistic approach combines academics, therapy, and social skills training to empower our students.
+              We provide holistic, tuition-free education and therapeutic services — ensuring every child, regardless of ability or background, has the opportunity to learn, grow, and thrive.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               {[
@@ -130,12 +130,13 @@ export default function About() {
             </div>
             <div className="flex flex-wrap gap-4 items-center">
               <div className="flex items-center gap-2 text-gray-700">
-                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
                   <span className="text-green-700 font-bold text-xs">☎</span>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500">Call Us</p>
-                  <p className="text-sm font-semibold">+234 (0) 800 000 0000</p>
+                  <p className="text-xs text-gray-500 mb-0.5">Call Us</p>
+                  <p className="text-sm font-semibold leading-snug">+234 806 063 6704</p>
+                  <p className="text-sm font-semibold leading-snug">+234 802 312 6250</p>
                 </div>
               </div>
             </div>
