@@ -4,43 +4,43 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const images = [
   {
-    src: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800',
+    src: '/pics1.JPG',
     alt: 'Children in classroom',
     category: 'Classroom',
     span: 'col-span-2 row-span-2',
   },
   {
-    src: 'https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg?auto=compress&cs=tinysrgb&w=600',
+    src: '/pics2.JPG',
     alt: 'Art therapy session',
     category: 'Therapy',
     span: '',
   },
   {
-    src: 'https://images.pexels.com/photos/3769714/pexels-photo-3769714.jpeg?auto=compress&cs=tinysrgb&w=600',
+    src: 'pics3.jpg',
     alt: 'Reading time',
     category: 'Learning',
     span: '',
   },
   {
-    src: 'https://images.pexels.com/photos/8613320/pexels-photo-8613320.jpeg?auto=compress&cs=tinysrgb&w=600',
+    src: 'pics4.jpeg',
     alt: 'Group activity',
     category: 'Activities',
     span: '',
   },
   {
-    src: 'https://images.pexels.com/photos/5212695/pexels-photo-5212695.jpeg?auto=compress&cs=tinysrgb&w=600',
+    src: 'pics5.jpeg',
     alt: 'Teacher assisting student',
     category: 'Teaching',
     span: '',
   },
   {
-    src: 'https://images.pexels.com/photos/8613060/pexels-photo-8613060.jpeg?auto=compress&cs=tinysrgb&w=600',
+    src: 'pics6.jpg',
     alt: 'Sensory play',
     category: 'Therapy',
     span: '',
   },
   {
-    src: 'https://images.pexels.com/photos/3769983/pexels-photo-3769983.jpeg?auto=compress&cs=tinysrgb&w=800',
+    src: 'pics7.JPG',
     alt: 'Outdoor play',
     category: 'Activities',
     span: 'col-span-2',
