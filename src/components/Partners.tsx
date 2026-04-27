@@ -1,26 +1,26 @@
 import { Handshake } from 'lucide-react';
 
 const partners = [
-  { name: 'Lagos State Ministry of Education', abbr: 'LSME', color: 'bg-blue-100 text-blue-700' },
-  { name: 'Federal Ministry of Humanitarian Affairs', abbr: 'FMHA', color: 'bg-green-100 text-green-700' },
-  { name: 'UNICEF Nigeria', abbr: 'UNICEF', color: 'bg-cyan-100 text-cyan-700' },
-  { name: 'Special Olympics Nigeria', abbr: 'SON', color: 'bg-orange-100 text-orange-700' },
-  { name: 'Autism Society of Nigeria', abbr: 'ASN', color: 'bg-rose-100 text-rose-700' },
-  { name: 'Nigerian Educational Research', abbr: 'NERDC', color: 'bg-amber-100 text-amber-700' },
-  { name: 'Hope for the Vulnerable', abbr: 'HVF', color: 'bg-teal-100 text-teal-700' },
-  { name: 'Children\'s Development Foundation', abbr: 'CDF', color: 'bg-purple-100 text-purple-700' },
+  {
+    name: 'Chalak Mitra Life',
+    logo: '/ChalkMitra-removebg-preview.png',
+  },
+  {
+    name: "Christ's Ambassadors",
+    logo: '/Christ_Amm-removebg-preview.png',
+  },
 ];
 
 const testimonials = [
   {
-    quote: 'The transformation in our daughter has been extraordinary. The school\'s approach is unlike anything we\'ve experienced.',
+    quote: "The transformation in our daughter has been extraordinary. The school's approach is unlike anything we've experienced.",
     author: 'Mrs. Adaeze Okonkwo',
     role: 'Parent of 7-year-old student',
   },
   {
     quote: 'As a partner organisation, we are consistently impressed by the professionalism and genuine care shown by the entire team.',
     author: 'Dr. Emeka Nwosu',
-    role: 'UNICEF Nigeria Representative',
+    role: 'Partner Organisation Representative',
   },
 ];
 
@@ -39,17 +39,19 @@ export default function Partners() {
           </p>
         </div>
 
-        {/* Partner logos grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-16">
-          {partners.map(({ name, abbr, color }) => (
+        {/* Partner logos */}
+        <div className="flex flex-wrap justify-center gap-10 mb-16">
+          {partners.map(({ name, logo }) => (
             <div
               key={name}
-              className="flex flex-col items-center justify-center p-5 rounded-2xl bg-gray-50 border border-gray-100 hover:border-orange-200 hover:shadow-md transition-all duration-300 group text-center"
+              className="flex flex-col items-center justify-center p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-orange-200 hover:shadow-md transition-all duration-300 group w-64"
             >
-              <div className={`w-14 h-14 rounded-full flex items-center justify-center text-sm font-bold mb-3 group-hover:scale-110 transition-transform ${color}`}>
-                {abbr}
-              </div>
-              <p className="text-gray-600 text-xs leading-tight">{name}</p>
+              <img
+                src={logo}
+                alt={name}
+                className="h-28 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+              />
+              <p className="text-gray-600 text-sm font-semibold mt-4 text-center">{name}</p>
             </div>
           ))}
         </div>

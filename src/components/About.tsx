@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { Heart, Award, Users, BookOpen } from 'lucide-react';
 
 const stats = [
-  { icon: BookOpen, value: 120, label: 'Children Enrolled', suffix: '+' },
-  { icon: Users, value: 35, label: 'Qualified Staff', suffix: '+' },
-  { icon: Heart, value: 8, label: 'Years of Service', suffix: '' },
+  { icon: BookOpen, value: 39, label: 'Children Enrolled', suffix: '' },
+  { icon: Users, value: 17, label: 'Qualified Staff', suffix: '' },
+  { icon: Heart, value: 5, label: 'Years of Service', suffix: '' },
   { icon: Award, value: 95, label: 'Success Rate', suffix: '%' },
 ];
 
@@ -94,7 +94,7 @@ export default function About() {
             </div>
             {/* Badge */}
             <div className="absolute -bottom-4 -right-4 bg-orange-500 text-white rounded-2xl p-4 shadow-xl text-center hidden md:block">
-              <div className="text-2xl font-bold">8+</div>
+              <div className="text-2xl font-bold">5</div>
               <div className="text-xs leading-tight">Years<br />of Service</div>
             </div>
           </div>
@@ -116,8 +116,8 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4 mb-8">
               {[
                 'Certified Special Education',
-                'Speech & Occupational Therapy',
-                'Individualised Learning Plans',
+                'Therapy (Physio, Occupational & Speech)',
+                'Vocational Training',
                 'Safe & Inclusive Environment',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
@@ -129,13 +129,6 @@ export default function About() {
               ))}
             </div>
             <div className="flex flex-wrap gap-4 items-center">
-              <a
-                href="#what-we-do"
-                onClick={(e) => { e.preventDefault(); document.querySelector('#what-we-do')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-7 py-3 rounded-full transition-colors duration-200"
-              >
-                What We Do
-              </a>
               <div className="flex items-center gap-2 text-gray-700">
                 <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
                   <span className="text-green-700 font-bold text-xs">☎</span>
