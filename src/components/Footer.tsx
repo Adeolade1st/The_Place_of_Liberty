@@ -57,7 +57,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="md:col-span-1">
           <button onClick={() => onNavigate('home')} className="mb-4 focus:outline-none">
             <img
-              src="/pol_logo-removebg-preview.png"
+              src="/pol_logo.png"
               alt="Place of Liberty Nursery & Primary School"
               className="h-16 w-auto object-contain brightness-0 invert"
             />
