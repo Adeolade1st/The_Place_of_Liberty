@@ -65,7 +65,7 @@ export default function TherapyPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(234,88,12,0.88), rgba(194,65,12,0.93)), url('/mouththerapy.jpg')`,
+          backgroundImage: `linear-gradient(rgba(8,78,100,0.93), rgba(194,65,12,0.93)), url('/mouththerapy.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
