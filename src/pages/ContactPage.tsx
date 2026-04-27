@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone Number',
-    lines: ['+234 (0) 800 000 0000'],
+    lines: ['+234 806 063 6704 or +234 802 312 6250'],
     color: 'bg-green-50 text-green-700',
   },
   {
@@ -165,7 +165,7 @@ export default function ContactPage() {
                       value={form.phone}
                       onChange={handleChange}
                       type="tel"
-                      phone="+234 806 063 6704 or +234 802 312 6250"
+                      placeholder="+234 806 063 6704 or +234 802 312 6250"
                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 transition-colors"
                     />
                   </div>
