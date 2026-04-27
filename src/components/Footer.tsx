@@ -139,7 +139,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                   +234 806 063 6704
                 </a>
                 <a href="tel:+2348023126250" className="text-gray-400 hover:text-orange-400 text-sm transition-colors block">
-                  +234 802 312 6250, +234 806 063 6704
+                  +234 802 312 6250
                 </a>
               </div>
             </li>
