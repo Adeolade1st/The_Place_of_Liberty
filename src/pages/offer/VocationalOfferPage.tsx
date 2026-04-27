@@ -19,7 +19,7 @@ const tracks = [
   { name: 'Furniture & Woodwork', desc: 'Carpentry, furniture making, and wood finishing skills.' },
   { name: 'Electrical Repairs', desc: 'Basic electrical faultfinding and domestic appliance repair.' },
   { name: 'Phone & Electronics Repair', desc: 'Smartphone and electronic device maintenance and repair.' },
-  { name: 'Business Management', desc: 'Financial literacy, record keeping, and business plannin.' },
+  
 ];
 
 const launchpadFeatures = [
