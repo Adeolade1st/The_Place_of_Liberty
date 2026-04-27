@@ -145,7 +145,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             <span className="flex items-center gap-1"><Phone size={12} />+234 (0) 800 000 0000</span>
             <span className="flex items-center gap-1"><Mail size={12} />info@theplaceofiberty.edu.ng</span>
           </div>
-          <span className="flex items-center gap-1"><MapPin size={12} />1, Alhaji Masha Road, Surulere, Lagos</span>
+          <span className="flex items-center gap-1"><MapPin size={12} /> 1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos</span>
         </div>
       </div>
 
