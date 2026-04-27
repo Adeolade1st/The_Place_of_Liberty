@@ -107,7 +107,7 @@ export default function VisionMission() {
 
           <div className="relative">
             <img
-              src="/mr.oluwole.png"
+              src="/mr.oluwole1.png"
               alt="Teacher and child"
               className="rounded-2xl w-full h-80 md:h-[420px] object-cover shadow-xl"
             />
