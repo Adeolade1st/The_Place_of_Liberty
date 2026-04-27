@@ -165,7 +165,7 @@ export default function ContactPage() {
                       value={form.phone}
                       onChange={handleChange}
                       type="tel"
-                      placeholder="+234 (0) 000 000 0000"
+                      phone="+234 806 063 6704 or +234 802 312 6250"
                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 transition-colors"
                     />
                   </div>
