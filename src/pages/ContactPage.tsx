@@ -11,13 +11,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone Number',
-    lines: ['+234 806 063 6704 or +234 802 312 6250'],
+    lines: ['+234 806 063 6704 , +234 802 312 6250'],
     color: 'bg-green-50 text-green-700',
   },
   {
     icon: Mail,
     title: 'Email Address',
-    lines: ['info@theplaceofiberty.edu.ng', 'admissions@theplaceofiberty.edu.ng'],
+    lines: ['info@th.edu.ng', 'admissions@theplaceofiberty.edu.ng'],
     color: 'bg-blue-50 text-blue-600',
   },
   {
