@@ -48,7 +48,6 @@ export default function Hero() {
   key={index}
   className={`absolute inset-0 transition-opacity duration-1000 bg-zinc-900 ${
     index === current ? 'opacity-100' : 'opacity-0'
-  }`}
 >
 
 
