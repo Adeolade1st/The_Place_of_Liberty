@@ -37,43 +37,30 @@ export default function Hero() {
     document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  return (
-    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden">
-      {/* Slides */}
-{slides.map((slide, index) => (
- <div 
-  key={index}
-  className={`absolute inset-0 transition-opacity duration-1000 bg-zinc-900 ${
-  <div 
-  key={index}
-  className={`absolute inset-0 transition-opacity duration-1000 bg-zinc-900 ${
-    index === current ? 'opacity-100' : 'opacity-0'
->
+   return (
+    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden bg-zinc-900">
+      {/* Background Slides */}
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            index === current ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          {/* 1. The Faded Image Layer */}
+          <div className="absolute inset-0 overflow-hidden">
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover opacity-30 blur-[2px] scale-105"
+            />
+            {/* 2. The Gradient "Fade" */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70" />
+          </div>
+        </div>
+      ))}
 
-
-    {/* 1. The Faded Image Layer */}
-    <div className="absolute inset-0 overflow-hidden">
-      <img
-        src={slide.image}
-        alt={slide.title}
-        className="w-full h-full object-cover opacity-30 blur-[2px] scale-105"
-      />
-      {/* 2. The Gradient "Fade" (Matches the lighting in your reference image) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70" />
-    </div>
-
-    {/* 3. The Text Content Layer (Stays perfectly clear) */}
-    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 text-white">
-       <span className="uppercase tracking-[0.3em] text-sm mb-4 opacity-80">What We Offer</span>
-       <h1 className="text-5xl md:text-7xl font-bold mb-4">{slide.highlight}</h1>
-       <p className="max-w-2xl text-lg md:text-xl opacity-90 leading-relaxed">
-         {slide.subtitle}
-       </p>
-       {/* Your buttons go here */}
-    </div>
-  </div>
-  ))}
-      {/* Content */}
+      {/* Main Content Layer (Fixed at the center) */}
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 w-full">
           <div className="max-w-2xl">
@@ -88,13 +75,16 @@ export default function Hero() {
               {slides[current].subtitle}
             </p>
             <div className="flex flex-wrap gap-4">
-              <a>
+              <a 
+                href="#about"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition-all duration-200"
+              >
                 Learn More
               </a>
               <a
                 href="#donate"
                 onClick={(e) => { e.preventDefault(); document.querySelector('#donate')?.scrollIntoView({ behavior: 'smooth' }); }}
-                className="border-2 border-white text-white hover:bg-white hover:text-green-800 font-semibold px-8 py-3 rounded-full transition-all duration-200"
+                className="border-2 border-white text-white hover:bg-white hover:text-orange-500 font-semibold px-8 py-3 rounded-full transition-all duration-200"
               >
                 Support Us
               </a>
@@ -102,7 +92,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-  
+
       {/* Slide indicators */}
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {slides.map((_, i) => (
