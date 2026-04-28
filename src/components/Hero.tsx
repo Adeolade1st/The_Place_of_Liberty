@@ -45,10 +45,7 @@ export default function Hero() {
     key={index}
 className={`absolute inset-0 transition-opacity duration-1000 ${
   index === currentIndex ? 'opacity-100' : 'opacity-0'
-} bg-zinc-900`}
-
-
-  >
+} bg-zinc-900`}>
     {/* 1. The Faded Image Layer */}
     <div className="absolute inset-0 overflow-hidden">
       <img
