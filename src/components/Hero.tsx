@@ -41,11 +41,13 @@ export default function Hero() {
     <section id="home" className="relative h-screen min-h-[600px] overflow-hidden">
       {/* Slides */}
 {slides.map((slide, index) => (
-  <div 
-    key={index}
-className={`absolute inset-0 transition-opacity duration-1000 ${
-  index === currentIndex ? 'opacity-100' : 'opacity-0'
-} bg-zinc-900`}>
+ <div 
+  key={index}
+  className={`absolute inset-0 transition-opacity duration-1000 bg-zinc-900 ${
+    index === currentIndex ? 'opacity-100' : 'opacity-0'
+  }`}
+>
+
     {/* 1. The Faded Image Layer */}
     <div className="absolute inset-0 overflow-hidden">
       <img
