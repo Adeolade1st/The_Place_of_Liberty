@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 const slides = [
   {
-    image: '/starboy1.JPG',
+    image: '/starboy.JPG',
     title: 'Every Child Deserves',
     highlight: 'A Chance To Thrive',
     subtitle:
