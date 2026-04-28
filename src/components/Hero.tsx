@@ -45,11 +45,15 @@ export default function Hero() {
           key={i}
           className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
         >
-          <img
-  src={slide.image} // This pulls '/starboy.JPG', '/Playtime.jpeg', etc.
-  alt={slide.title}
-  className="w-full h-full object-cover opacity-60" // The 60% opacity for the "overlay" look
-/>
+         <div className="absolute inset-0 bg-black"> {/* Keeps a dark base if needed */}
+  <img
+    src={slide.image}
+    alt={slide.title}
+    className="w-full h-full object-cover blur-md scale-105" 
+    /* blur-md adds the effect; scale-105 prevents white edges caused by blur */
+  />
+</div>
+
 
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent" />
         </div>
