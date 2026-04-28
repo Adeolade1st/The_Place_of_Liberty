@@ -1,29 +1,39 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-const slides = [
-  {
-    image: '/starboy.JPG',
-    title: 'Every Child Deserves',
-    highlight: 'A Chance To Thrive',
-    subtitle:
-      'We provide a safe, nurturing environment where children with developmental disabilities discover their unique abilities and reach their full potential.',
-  },
-  {
-    image: '/Playtime.jpeg',
-    title: 'Education Is',
-    highlight: 'A Right, Not A Privilege',
-    subtitle:
-      'At The Place of Liberty, we believe inclusive education transforms lives, families, and communities across Nigeria.',
-  },
-  {
-    image: '/teach.JPG',
-    title: 'Together We Build',
-    highlight: 'Brighter Futures',
-    subtitle:
-      'Your support enables us to provide world-class special education, therapy, and care for children who need it most.',
-  },
-];
+<div className="relative w-full h-screen overflow-hidden bg-black">
+  {slides.map((slide, index) => (
+    <div 
+      key={index}
+      className={`absolute inset-0 transition-opacity duration-1000 ${
+        index === currentIndex ? 'opacity-100' : 'opacity-0'
+      }`}
+    >
+      {/* 1. The Background Image */}
+      <img
+        src={slide.image}
+        alt={slide.title}
+        className="w-full h-full object-cover opacity-60" // Adjust opacity here (0.6)
+      />
+
+      {/* 2. The Dark Overlay (Optional - adds extra contrast for text) */}
+      <div className="absolute inset-0 bg-black/30" />
+
+      {/* 3. The Content Layer (Stays at 100% opacity) */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 text-white">
+        <h2 className="text-xl md:text-2xl font-light mb-2">{slide.title}</h2>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">{slide.highlight}</h1>
+        <p className="max-w-2xl text-lg opacity-90">{slide.subtitle}</p>
+      </div>
+    </div>
+  ))}
+  
+  {/* Your ChevronDown would typically go here */}
+  <div className="absolute bottom-10 w-full flex justify-center animate-bounce">
+    <ChevronDown size={48} className="text-white" />
+  </div>
+</div>
+
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
