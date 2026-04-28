@@ -40,24 +40,36 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-screen min-h-[600px] overflow-hidden">
       {/* Slides */}
-      {slides.map((slide, i) => (
-        <div
-          key={i}
-          className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
-        >
-         <div className="absolute inset-0 bg-black"> {/* Keeps a dark base if needed */}
-  <img
-    src={slide.image}
-    alt={slide.title}
-    className="w-full h-full object-cover blur-sm scale-105" 
-    /* blur-md adds the effect; scale-105 prevents white edges caused by blur */
-  />
-</div>
+{slides.map((slide, index) => (
+  <div 
+    key={index}
+    className={`absolute inset-0 transition-opacity duration-1000 ${
+      index === currentIndex ? 'opacity-100' : 'opacity-0'
+    } bg-zinc-900`} // <--- THIS is your new background section base
+  >
+    {/* 1. The Faded Image Layer */}
+    <div className="absolute inset-0 overflow-hidden">
+      <img
+        src={slide.image}
+        alt={slide.title}
+        className="w-full h-full object-cover opacity-30 blur-[2px] scale-105"
+      />
+      {/* 2. The Gradient "Fade" (Matches the lighting in your reference image) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70" />
+    </div>
 
-
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent" />
-        </div>
-      ))}
+    {/* 3. The Text Content Layer (Stays perfectly clear) */}
+    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 text-white">
+       <span className="uppercase tracking-[0.3em] text-sm mb-4 opacity-80">What We Offer</span>
+       <h1 className="text-5xl md:text-7xl font-bold mb-4">{slide.highlight}</h1>
+       <p className="max-w-2xl text-lg md:text-xl opacity-90 leading-relaxed">
+         {slide.subtitle}
+       </p>
+       
+       {/* Your buttons go here */}
+    </div>
+  </div>
+))}
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
