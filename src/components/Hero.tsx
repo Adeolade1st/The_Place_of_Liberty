@@ -38,7 +38,7 @@ export default function Hero() {
   };
 
    return (
-    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden bg-zinc-600">
+    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden bg-zinc-1100">
       {/* Background Slides */}
       {slides.map((slide, index) => (
         <div
