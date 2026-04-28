@@ -1,77 +1,58 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-const Hero = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const slides = [
+  {
+    image: '/starboy1.JPG',
+    title: 'Every Child Deserves',
+    highlight: 'A Chance To Thrive',
+    subtitle:
+      'We provide a safe, nurturing environment where children with developmental disabilities discover their unique abilities and reach their full potential.',
+  },
+  {
+    image: '/Playtime.jpeg',
+    title: 'Education Is',
+    highlight: 'A Right, Not A Privilege',
+    subtitle:
+      'At The Place of Liberty, we believe inclusive education transforms lives, families, and communities across Nigeria.',
+  },
+  {
+    image: '/teach.JPG',
+    title: 'Together We Build',
+    highlight: 'Brighter Futures',
+    subtitle:
+      'Your support enables us to provide world-class special education, therapy, and care for children who need it most.',
+  },
+];
 
-  // The 3 images from your image are defined here
-  const slides = [
-    {
-      image: '/starboy.JPG',
-      title: 'Every Child Deserves',
-      highlight: 'A Chance To Thrive',
-      subtitle: 'We provide a safe, nurturing environment where children discover their unique abilities.'
-    },
-    {
-      image: '/Playtime.jpeg',
-      title: 'Education Is',
-      highlight: 'A Right, Not A Privilege',
-      subtitle: 'Inclusive education transforms lives, families, and communities.'
-    },
-    {
-      image: '/teach.JPG',
-      title: 'Together We Build',
-      highlight: 'Brighter Futures',
-      subtitle: 'Your support enables us to provide world-class special education and therapy.'
-    }
-  ];
+export default function Hero() {
+  const [current, setCurrent] = useState(0);
 
-  // Logic to rotate through ALL 3 images
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 5000);
+    const timer = setInterval(() => setCurrent((c) => (c + 1) % slides.length), 5000);
     return () => clearInterval(timer);
-  }, [slides.length]);
+  }, []);
+
+  const scrollDown = () => {
+    document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
-      {slides.map((slide, index) => (
-        <div 
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
-          }`}
+    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden">
+      {/* Slides */}
+      {slides.map((slide, i) => (
+        <div
+          key={i}
+          className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
         >
-          {/* Background image for current slide */}
           <img
             src={slide.image}
             alt={slide.title}
-            className="w-full h-full object-cover opacity-50" 
+            className="w-full h-full object-cover object-center"
           />
-          
-          {/* Dark overlay for text contrast */}
-          <div className="absolute inset-0 bg-black/40" />
-
-          {/* Text Content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-            <h2 className="text-xl md:text-2xl font-light mb-2">{slide.title}</h2>
-            <h1 className="text-4xl md:text-7xl font-bold mb-4">{slide.highlight}</h1>
-            <p className="max-w-3xl text-lg md:text-xl opacity-90">{slide.subtitle}</p>
-          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent" />
         </div>
       ))}
-      
-      {/* Scroll Down Indicator */}
-      <div className="absolute bottom-10 w-full flex justify-center animate-bounce">
-        <ChevronDown size={48} className="text-white" />
-      </div>
-    </div>
-  );
-};
-
-export default Hero;
-
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
