@@ -49,7 +49,7 @@ export default function Hero() {
   <img
     src={slide.image}
     alt={slide.title}
-    className="w-full h-full object-cover blur-md scale-105" 
+    className="w-full h-full object-cover blur-md scale-55" 
     /* blur-md adds the effect; scale-105 prevents white edges caused by blur */
   />
 </div>
