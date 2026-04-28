@@ -119,6 +119,6 @@ export default function Hero() {
       >
         <ChevronDown size={40} strokeWidth={1} />
       </button>
-    </section
+    </section>
   );
 }
