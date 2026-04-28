@@ -72,8 +72,7 @@ export default function Hero() {
        {/* Your buttons go here */}
     </div>
   </div>
-))}
-
+  ))}
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-4 w-full">
@@ -103,7 +102,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
+  
       {/* Slide indicators */}
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {slides.map((_, i) => (
