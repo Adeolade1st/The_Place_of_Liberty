@@ -43,10 +43,10 @@ export default function Hero() {
 {slides.map((slide, index) => (
   <div 
     key={index}
-    className={`absolute inset-0 transition-opacity duration-1000 ${
-      index === currentIndex ? 'opacity-100' : 'opacity-0'
-    index === currentIndex ? 'opacity-100' : 'opacity-0'
-} bg-zinc-900`} 
+className={`absolute inset-0 transition-opacity duration-1000 ${
+  index === currentIndex ? 'opacity-100' : 'opacity-0'
+} bg-zinc-900`}
+
 
   >
     {/* 1. The Faded Image Layer */}
