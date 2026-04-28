@@ -45,7 +45,9 @@ export default function Hero() {
     key={index}
     className={`absolute inset-0 transition-opacity duration-1000 ${
       index === currentIndex ? 'opacity-100' : 'opacity-0'
-    } bg-zinc-900`} // <--- THIS is your new background section base
+    index === currentIndex ? 'opacity-100' : 'opacity-0'
+} bg-zinc-900`} 
+
   >
     {/* 1. The Faded Image Layer */}
     <div className="absolute inset-0 overflow-hidden">
@@ -65,7 +67,6 @@ export default function Hero() {
        <p className="max-w-2xl text-lg md:text-xl opacity-90 leading-relaxed">
          {slide.subtitle}
        </p>
-       
        {/* Your buttons go here */}
     </div>
   </div>
