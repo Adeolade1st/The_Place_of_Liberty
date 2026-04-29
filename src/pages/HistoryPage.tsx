@@ -18,7 +18,7 @@ const timeline = [
   {
     year: 'Apr 2021',
     title: 'Anglican Diocese of Lagos Mainland Joins',
-    desc: 'Asiwaju Femi Somolu brokered a meeting between the Lord Bishop (Right Rev. Akinpelu Johnson) Lady Chikwue Ochiagha, and Ladipo Oluwole at 1, Alhaji Masha Road on April 2, 2021. The Bishop and Lagos Mainland Diocese agreed to power the special needs school, and in partnership with the Oluwole family and CM Life, the vision came to life.',
+    desc: 'Asiwaju Femi Somolu brokered a meeting between the Lord Bishop (Right Rev. Akinpelu Johnson), Lady Chikwue Ochiagha, and Ladipo Oluwole at 1, Alhaji Masha Road on April 2, 2021. The Bishop and Lagos Mainland Diocese agreed to power the special needs school, and in partnership with the Oluwole family and CM Life, the vision came to life.',
     icon: Church,
     color: 'bg-orange-500',
   },
