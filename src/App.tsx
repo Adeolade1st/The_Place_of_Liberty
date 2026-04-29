@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import WhatWeDo from './components/WhatWeDo';
 import VisionMission from './components/VisionMission';
-import Gallery from './components/Gallery';
 import Partners from './components/Partners';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
@@ -67,11 +66,10 @@ export default function App() {
       <main>
         {currentPage === 'home' && (
           <>
-            <Hero />
+            <Hero onNavigate={handleNavigate} />
             <About />
             <WhatWeDo onNavigate={handleNavigate} />
             <VisionMission />
-            <Gallery />
             <Testimonials />
             <Partners />
           </>
