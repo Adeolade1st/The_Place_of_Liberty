@@ -6,10 +6,6 @@ const partners = [
     name: 'Chalak Mitra Life',
     logo: '/ChalkMitra-removebg-preview.png',
   },
-  {
-    name: "Christ's Ambassadors",
-    logo: '/Christ_Amm-removebg-preview.png',
-  },
 ];
 
 const testimonials = [
