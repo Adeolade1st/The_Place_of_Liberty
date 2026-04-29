@@ -6,7 +6,7 @@ const stats = [
   { icon: BookOpen, value: 39, label: 'Children Enrolled', suffix: '' },
   { icon: Users, value: 17, label: 'Qualified Staff', suffix: '' },
   { icon: Heart, value: 5, label: 'Years of Service', suffix: '' },
-  { icon: Award, value: 95, label: 'Success Rate', suffix: '%' },
+  
 ];
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {
