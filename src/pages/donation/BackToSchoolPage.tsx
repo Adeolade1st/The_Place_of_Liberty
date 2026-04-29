@@ -102,7 +102,7 @@ export default function BackToSchoolPage() {
               <div className="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center mx-auto mb-3">
                 <Icon size={22} className="text-amber-700" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">{value}</div
+              <div className="text-3xl font-bold text-gray-900 mb-1">{value}</div>
               <div className="text-sm font-semibold text-gray-700 mb-0.5">{label}</div>
               <div className="text-xs text-gray-400">{sub}</div>
             </div>
