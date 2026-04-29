@@ -16,7 +16,7 @@ const images = [
     caption: 'Art therapy helps children express emotions and build fine motor skills.',
   },
   {
-    src: 'pics1.PNG',
+    src: 'pics1.JPG',
     alt: 'Reading time',
     category: 'Classroom',
     caption: 'Storytime sessions nurture language development and imagination.',
