@@ -26,7 +26,7 @@ const slides = [
     tag: 'Together we build brighter futures',
     title: 'Your Support',
     highlight: 'Changes Lives',
-    subtitle: 'Join us in transforming children\'s futures.',
+    subtitle: 'Join us to make a difference',
   },
 ];
 
