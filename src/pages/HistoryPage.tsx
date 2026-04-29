@@ -11,7 +11,7 @@ const timeline = [
   {
     year: 'Oct 25, 2020',
     title: 'The Act of Generosity That Started It All',
-    desc: 'About 6 weeks after Mama Oluwole\'s passing, Mr. Manish Patel donated $5,000 towards mama\'s favourite charity. This led to something much bigger than anyone could have predicted. The Oluwole family agreed the donation should go towards special needs children from indigent families, and decided to remodel and offer their family home at 1 Alhaji Masha as a free school.',
+    desc: 'About 6 weeks after Mama Oluwole\'s passing, Mr. Manish Patel donated $5,000 towards mama\'s favourite charity. This led to something much bigger than anyone could have predicted. The Oluwole family agreed the donation should go towards special needs children from indigent families, and decided to remodel and offer their family home at 1 Alhaji Masha as a tempoary site to the school.',
     icon: Lightbulb,
     color: 'bg-green-700',
   },
