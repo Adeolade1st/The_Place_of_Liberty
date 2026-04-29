@@ -1,7 +1,7 @@
 import { Stethoscope, Activity, MessageCircle, PersonStanding, CheckCircle, Users, Star, TrendingUp } from 'lucide-react';
 
 const stats = [
-  { icon: Users, value: '85+', label: 'Children in Therapy', sub: 'currently receiving sessions' },
+  { icon: Users, value: '39+', label: 'Children in Therapy', sub: 'currently receiving sessions' },
   { icon: Star, value: '3', label: 'Therapy Disciplines', sub: 'under one roof' },
   { icon: TrendingUp, value: '91%', label: 'Functional Improvement', sub: 'reported by families' },
   { icon: Activity, value: '2x/week', label: 'Session Frequency', sub: 'per child on average' },
