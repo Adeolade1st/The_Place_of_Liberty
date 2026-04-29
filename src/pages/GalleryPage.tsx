@@ -212,7 +212,7 @@ export default function GalleryPage() {
             className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-orange-500 rounded-full p-3 transition-colors z-10"
             onClick={(e) => { e.stopPropagation(); nextImage(); }}
           >
-            <ChevronRight size={22} /
+            <ChevronRight size={22} />
           </button>
         </div>
       )}
