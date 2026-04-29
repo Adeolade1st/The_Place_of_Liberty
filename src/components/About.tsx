@@ -55,7 +55,7 @@ export default function About() {
     <section id="about" className="pt-20">
       {/* Stats banner */}
       <div className="bg-green-800 text-white py-10">
-        <div ref={statsRef} className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 sr-stagger sr-hidden">
+        <div ref={statsRef} className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-3 gap-8 sr-stagger sr-hidden">
           {stats.map(({ icon: Icon, value, label, suffix }) => (
             <div key={label} className="text-center">
               <div className="flex justify-center mb-2">
