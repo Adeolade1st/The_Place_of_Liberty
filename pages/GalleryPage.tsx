@@ -10,13 +10,13 @@ const images = [
     caption: 'Our bright, welcoming classroom where learning comes alive every day.',
   },
   {
-    src: 'pics1.jpg',
+    src: 'pics1.JPG',
     alt: 'Art therapy session',
     category: 'Therapy',
     caption: 'Art therapy helps children express emotions and build fine motor skills.',
   },
   {
-    src: 'pics1.JPG',
+    src: 'pics11.PNG',
     alt: 'Reading time',
     category: 'Classroom',
     caption: 'Storytime sessions nurture language development and imagination.',
