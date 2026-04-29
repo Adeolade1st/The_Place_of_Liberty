@@ -22,7 +22,7 @@ const slides = [
     subtitle: 'Therapy, vocational training, and tuition-free learning for indigent families in Lagos.',
   },
   {
-    image: '/class.jpeg',
+    image: '/CHILDREN.jpg',
     tag: 'Together we build brighter futures',
     title: 'Your Support',
     highlight: 'Changes Lives',
