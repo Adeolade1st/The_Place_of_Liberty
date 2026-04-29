@@ -78,6 +78,31 @@ const allImages: { src: string; alt: string; category: Exclude<Category, 'All'>;
   },
 ];
 
+const categories: Category[] = ['All', 'Classroom', 'Therapy', 'Activities', 'Events', 'Community']
+
+export default function GalleryPage() {
+  const [activeCategory, setActiveCategory] = useState<Category>('All');
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const filtered = activeCategory === 'All'
+    ? allImages
+    : allImages.filter((img) => img.category === activeCategory);
+
+  const openLightbox = (index: number) => setLightboxIndex(index);
+  const closeLightbox = () => setLightboxIndex(null);
+  const prevImage = () => setLightboxIndex((i) => (i !== null ? (i - 1 + filtered.length) % filtered.length : null));
+  const nextImage = () => setLightboxIndex((i) => (i !== null ? (i + 1) % filtered.length : null));
+
+  return (
+    <div className="pt-24 min-h-screen bg-white">
+      {/* Hero banner */}
+      <div
+        className="relative py-20 px-4 text-center text-white"
+        style={{
+          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93)), url('/pics1.JPG')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
         <p className="text-orange-300 font-semibold text-sm uppercase tracking-wider mb-2">Our Moments</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Photo Gallery</h1>
