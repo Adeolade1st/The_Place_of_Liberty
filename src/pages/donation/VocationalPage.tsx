@@ -84,19 +84,7 @@ export default function VocationalPage() {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          {stats.map(({ icon: Icon, value, label, sub }) => (
-            <div key={label} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mx-auto mb-3">
-                <Icon size={22} className="text-green-700" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">{value}</div>
-              <div className="text-sm font-semibold text-gray-700 mb-0.5">{label}</div>
-              <div className="text-xs text-gray-400">{sub}</div>
-            </div>
-          ))}
-        </div>
+       
 
         {/* Tracks */}
         <div className="bg-green-800 text-white rounded-2xl p-8 mb-12">
