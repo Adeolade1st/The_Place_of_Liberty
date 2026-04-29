@@ -8,7 +8,7 @@ interface HeroProps {
 
 const slides = [
   {
-    image: '/starboy_1.png',
+    image: '/starboy.JPG',
     tag: 'Helping Today, Helping Tomorrow',
     title: 'Give Every Child The',
     highlight: 'Gift of Education',
