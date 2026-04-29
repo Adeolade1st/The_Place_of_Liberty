@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
 
-type Category = 'All' | 'Classroom' | 'Therapy' | 'Activities' | 'Events' | 'Community';
+//type Category = 'All' | 'Classroom' | 'Therapy' | 'Activities' | 'Events' | 'Community';
 
 const allImages: { src: string; alt: string; category: Exclude<Category, 'All'>; caption: string }[] = [
   {
