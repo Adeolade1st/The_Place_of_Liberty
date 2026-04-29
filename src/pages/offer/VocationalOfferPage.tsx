@@ -50,9 +50,9 @@ export default function VocationalOfferPage() {
 
       <div className="max-w-7xl mx-auto px-4 py-14">
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8 mb-16">
           {stats.map(({ icon: Icon, value, label, sub }) => (
-            <div key={label} className="bg-green-50 rounded-2xl p-6 text-center border border-green-100">
+            <div key={label} className="bg-green-50 rouned-2xl p-6 text-center border border-green-100">
               <div className="w-11 h-11 rounded-xl bg-green-100 flex items-center justify-center mx-auto mb-3">
                 <Icon size={20} className="text-green-700" />
               </div>
