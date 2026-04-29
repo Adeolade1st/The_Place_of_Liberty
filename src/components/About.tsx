@@ -87,8 +87,8 @@ export default function About() {
                 className="rounded-2xl w-full h-56 object-cover shadow-lg mt-8"
               />
               <img
-                src="/teamwork.jpg"
-                alt="Happy child"
+                src="/teamwork.JPG"
+                alt="Team work"
                 className="rounded-2xl w-full h-48 object-cover object-top shadow-lg -mt-4"
               />
               <img
