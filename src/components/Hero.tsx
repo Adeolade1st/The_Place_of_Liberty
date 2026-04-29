@@ -26,7 +26,7 @@ const slides = [
     tag: 'Together we build brighter futures',
     title: 'Your Support',
     highlight: 'Changes Lives',
-    subtitle: 'Join the Oluwole Family, CM Life, and the Anglican Diocese in transforming children\'s futures.',
+    subtitle: 'Join us in transforming children\'s futures.',
   },
 ];
 
