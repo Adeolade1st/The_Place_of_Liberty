@@ -134,7 +134,7 @@ export default function VocationalOfferPage() {
         {/* CTA */}
         <div className="bg-orange-500 text-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl font-bold mb-2">Enrol in Our Vocational Programme</h3>
+            <h3 className="text-xl font-bold mb-2">Enroll in Our Vocational Programme</h3>
             <p className="text-orange-100 text-sm leading-relaxed max-w-lg">
               Contact us to find out eligibility, available tracks, and how to register your child or young adult.
             </p>
