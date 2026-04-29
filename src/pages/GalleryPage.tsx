@@ -3,47 +3,77 @@ import { X, ZoomIn } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const images = [
-  {
-    src: '/pics1.JPG',
+   {
+    src: '/pics12.jpg',
     alt: 'Children in classroom',
     category: 'Classroom',
-    span: 'col-span-2 row-span-2',
+    caption: 'Our bright, welcoming classroom where learning comes alive every day.',
   },
   {
-    src: '/pics2.JPG',
+    src: 'pics11.jpg',
     alt: 'Art therapy session',
     category: 'Therapy',
-    span: '',
+    caption: 'Art therapy helps children express emotions and build fine motor skills.',
   },
   {
-    src: 'pics3.jpg',
+    src: 'pics11.PNG',
     alt: 'Reading time',
-    category: 'Learning',
-    span: '',
+    category: 'Classroom',
+    caption: 'Storytime sessions nurture language development and imagination.',
   },
   {
-    src: 'pics4.jpeg',
+    src: 'pics10.jpg',
     alt: 'Group activity',
     category: 'Activities',
-    span: '',
+    caption: 'Group activities build teamwork, communication, and social bonds.',
   },
   {
-    src: 'pics5.jpeg',
-    alt: 'Teacher assisting student',
-    category: 'Teaching',
-    span: '',
+    src: 'pics9.JPG',
+    alt: 'Teacher with student',
+    category: 'Classroom',
+    caption: 'One-on-one teaching time ensures every child gets personalised attention.',
   },
   {
-    src: 'pics6.jpg',
+    src: 'pics8.JPG',
     alt: 'Sensory play',
     category: 'Therapy',
-    span: '',
+    caption: 'Sensory integration activities help children regulate and focus.',
   },
   {
     src: 'pics7.JPG',
     alt: 'Outdoor play',
     category: 'Activities',
-    span: 'col-span-2',
+    caption: 'Outdoor play promotes physical development and wellbeing.',
+  },
+  {
+    src: 'pics6.jpg',
+    alt: 'Speech therapy',
+    category: 'Therapy',
+    caption: 'Speech therapy sessions support communication development.',
+  },
+  {
+    src: 'pics5.jpeg',
+    alt: 'Community outreach',
+    category: 'Community',
+    caption: 'We extend our care beyond the school into the wider community.',
+  },
+  {
+    src: 'pics4.jpeg',
+    alt: 'Graduation ceremony',
+    category: 'Events',
+    caption: 'Celebrating each child\'s milestones at our annual graduation ceremony.',
+  },
+  {
+    src: 'pics3.jpg',
+    alt: 'Parent engagement day',
+    category: 'Events',
+    caption: 'Parents participate in workshops and open days to support their children at home.',
+  },
+  {
+    src: 'pics2.JPG',
+    alt: 'Music therapy',
+    category: 'Therapy',
+    caption: 'Music therapy brings joy and improves cognitive and emotional skills.',
   },
 ];
 
