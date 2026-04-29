@@ -78,7 +78,7 @@ const allImages: { src: string; alt: string; category: Exclude<Category, 'All'>;
   },
 ];
 
-const categories: Category[] = ['All', 'Classroom', 'Therapy', 'Activities', 'Events', 'Community']
+const categories: Category[] = ['All', 'Classroom', 'Therapy', 'Activities', 'Events', 'Community'];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState<Category>('All');
