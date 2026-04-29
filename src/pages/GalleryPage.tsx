@@ -6,74 +6,51 @@ const images = [
    {
     src: '/pics12.jpg',
     alt: 'Children in classroom',
-
-    caption: 'Our bright, welcoming classroom where learning comes alive every day.',
   },
   {
     src: '/dance.JPG',
     alt: 'Art therapy session',
-   
-    caption: 'Art therapy helps children express emotions and build fine motor skills.',
   },
   {
     src: 'pics13.JPG',
     alt: 'Reading time',
-    
-    caption: 'Storytime sessions nurture language development and imagination.',
   },
   {
     src: 'pics10.jpg',
     alt: 'Group activity',
-   
-    caption: 'Group activities build teamwork, communication, and social bonds.',
   },
   {
     src: 'pics9.JPG',
     alt: 'Teacher with student',
-
-    caption: 'One-on-one teaching time ensures every child gets personalised attention.',
   },
   {
     src: 'pics8.JPG',
     alt: 'Sensory play',
-
-    caption: 'Sensory integration activities help children regulate and focus.',
   },
   {
     src: 'pics7.JPG',
     alt: 'Outdoor play',
-
-    caption: 'Outdoor play promotes physical development and wellbeing.',
   },
   {
     src: 'pics6.jpg',
     alt: 'Speech therapy',
-   
-    caption: 'Speech therapy sessions support communication development.',
   },
   {
     src: 'pics5.jpeg',
     alt: 'Community outreach',
- 
-    caption: 'We extend our care beyond the school into the wider community.',
   },
   {
     src: 'pics4.jpeg',
     alt: 'Graduation ceremony',
-
-    caption: 'Celebrating each child\'s milestones at our annual graduation ceremony.',
   },
   {
     src: 'pics3.jpg',
     alt: 'Parent engagement day',
-   
-    caption: 'Parents participate in workshops and open days to support their children at home.',
   },
   {
     src: 'pics2.JPG',
     alt: 'Music therapy',
 
-    caption: 'Music therapy brings joy and improves cognitive and emotional skills.',
   },
 ];
 
