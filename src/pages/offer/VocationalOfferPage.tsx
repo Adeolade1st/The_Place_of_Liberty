@@ -1,10 +1,8 @@
 import { Briefcase, Wrench, TrendingUp, Users, Award, DollarSign, CheckCircle } from 'lucide-react';
 
 const stats = [
-  { icon: Users, value: '47+', label: 'Graduates Supported', sub: 'since programme launch' },
-  { icon: Briefcase, value: '32', label: 'Businesses Started', sub: 'by alumni with Startup Kits' },
-  { icon: TrendingUp, value: '89%', label: 'Economic Independence', sub: 'rate within 6 months' },
-  { icon: Award, value: '12', label: 'Vocational Tracks', sub: 'available to students' },
+  { icon: Users, value: '17+', label: 'Currently Enrolled', sub: 'since programme launch' },
+  { icon: Award, value: '6', label: 'Vocational Tracks', sub: 'available to students' },
 ];
 
 const tracks = [
