@@ -77,17 +77,17 @@ export default function About() {
           <div ref={imagesRef} className="relative sr-hidden-left">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/Playtime.jpeg"
+                src="/teacherteach.JPG"
                 alt="Children learning"
                 className="rounded-2xl w-full h-56 object-cover shadow-lg"
               />
               <img
-                src="/class.jpeg"
+                src="/pics1.JPG"
                 alt="Teacher with students"
                 className="rounded-2xl w-full h-56 object-cover shadow-lg mt-8"
               />
               <img
-                src="/starboy_1.png"
+                src="/therapy.png"
                 alt="Happy child"
                 className="rounded-2xl w-full h-48 object-cover object-top shadow-lg -mt-4"
               />
