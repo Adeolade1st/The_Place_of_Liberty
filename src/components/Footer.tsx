@@ -150,7 +150,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               </a>
             </li>
           </ul>
-          <div className="mt-6"></div>
+          <div className="mt-6">
             <p className="text-white text-sm font-semibold mb-2">Newsletter</p>
             <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
               <input
