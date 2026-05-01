@@ -110,17 +110,6 @@ export default function BackToSchoolPage() {
           </div>
         </div>
 
-        {/* Photo strip */}
-        <div className="grid grid-cols-3 gap-3 mb-12">
-          {[
-            'https://images.pexels.com/photos/3769714/pexels-photo-3769714.jpeg?auto=compress&cs=tinysrgb&w=600',
-            'https://images.pexels.com/photos/8613320/pexels-photo-8613320.jpeg?auto=compress&cs=tinysrgb&w=600',
-            'https://images.pexels.com/photos/3769983/pexels-photo-3769983.jpeg?auto=compress&cs=tinysrgb&w=600',
-          ].map((src, i) => (
-            <img key={i} src={src} alt="Back to school" className="rounded-2xl h-40 w-full object-cover shadow-sm" />
-          ))}
-        </div>
-
         {/* Testimonial */}
         <div className="bg-green-800 text-white rounded-2xl p-8 mb-12">
           <div className="text-4xl font-serif text-white/40 mb-2">"</div>
