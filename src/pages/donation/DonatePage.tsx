@@ -65,19 +65,7 @@ export default function DonatePage({ onNavigate }: Props) {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-        {/* Overall stats */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
-          {overallStats.map(({ icon: Icon, value, label, desc }) => (
-            <div key={label} className="bg-white rounded-2xl p-7 text-center border border-gray-100 shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-3">
-                <Icon size={22} className="text-orange-500" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">{value}</div>
-              <div className="font-semibold text-gray-800 mb-1">{label}</div>
-              <div className="text-xs text-gray-400">{desc}</div>
-            </div>
-          ))}
-        </div>
+   
 
         {/* Initiative cards */}
         <div className="mb-10 text-center">
