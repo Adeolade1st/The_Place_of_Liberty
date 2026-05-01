@@ -58,7 +58,7 @@ export default function ContactPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93)), url(https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1600)`,
+          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93)), url'(/contactus.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
