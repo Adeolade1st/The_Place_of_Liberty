@@ -31,7 +31,7 @@ export default function MedicationPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(185,28,28,0.82), rgba(153,27,27,0.88)), url(https://images.pexels.com/photos/5212695/pexels-photo-5212695.jpeg?auto=compress&cs=tinysrgb&w=1600)`,
+         backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.63)), url('/mouththerapy.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -71,7 +71,7 @@ export default function MedicationPage() {
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/8613060/pexels-photo-8613060.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src='(/mouththerapy.jpg)'
               alt="Child receiving care"
               className="rounded-2xl w-full h-72 object-cover shadow-lg mb-6"
             />
