@@ -82,7 +82,7 @@ export default function About() {
                 className="rounded-2xl w-full h-56 object-cover shadow-lg"
               />
               <img
-                src="/pics1.JPG"
+                src="/pics2.JPG"
                 alt="Teacher with students"
                 className="rounded-2xl w-full h-56 object-cover shadow-lg mt-8"
               />
