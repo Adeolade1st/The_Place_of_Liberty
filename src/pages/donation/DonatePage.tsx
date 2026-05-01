@@ -42,7 +42,7 @@ const initiatives = [
 const overallStats = [
   { icon: Users, value: '320+', label: 'Lives Impacted', desc: 'children & families supported' },
   { icon: DollarSign, value: '₦12M+', label: 'Raised This Year', desc: 'from generous donors like you' },
-  { icon: TrendingUp, value: '8 Years', label: 'Consistent Impact', desc: 'of transforming lives in Lagos' }
+  { icon: TrendingUp, value: '8 Years', label: 'Consistent Impact', desc: 'of transforming lives in Lagos' },
 ];
 
 export default function DonatePage({ onNavigate }: Props) {
