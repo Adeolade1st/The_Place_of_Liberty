@@ -230,13 +230,6 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
         </div>
       </div>
 
-      {/* Trust signals */}
-      <div className="mt-6 grid grid-cols-3 gap-4 text-center text-xs text-gray-500">
-        {['Secure & Encrypted', 'Official Receipts Issued', '100% Goes to Children'].map((t) => (
-          <div key={t} className="bg-white rounded-xl p-3 border border-gray-100">{t}</div>
-        ))}
-      </div>
-
       {/* Page-specific content slot */}
       {children}
     </div>
