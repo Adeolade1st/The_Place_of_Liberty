@@ -71,7 +71,7 @@ export default function MedicationPage() {
           </div>
           <div>
             <img
-              src='(/mouththerapy.jpg)'
+              src='/mouththerapy.jpg'
               alt="Child receiving care"
               className="rounded-2xl w-full h-72 object-cover shadow-lg mb-6"
             />
