@@ -150,22 +150,6 @@ export default function Footer({ onNavigate }: FooterProps) {
               </a>
             </li>
           </ul>
-          <div className="mt-6">
-            <p className="text-white text-sm font-semibold mb-2">Newsletter</p>
-            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors"
-              />
-              <button
-                type="submit"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-3 py-2 rounded-lg text-xs font-semibold transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
         </div>
       </div>
 
