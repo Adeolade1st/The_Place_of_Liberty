@@ -73,7 +73,7 @@ export default function BackToSchoolPage() {
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src='/teach.JPG',
               alt="Children with school supplies"
               className="rounded-2xl w-full h-72 object-cover shadow-lg mb-6"
             />
