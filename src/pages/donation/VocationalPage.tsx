@@ -21,7 +21,7 @@ export default function VocationalPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93)), url(https://images.pexels.com/photos/3769714/pexels-photo-3769714.jpeg?auto=compress&cs=tinysrgb&w=1600)`,
+          backgroundImage: `linear-gradient(rgba(134,28,12,0.88), rgba(94,25,12,0.63)), url('/creatives.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
