@@ -222,7 +222,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               </div>
               <div className="p-4 bg-blue-50 rounded-xl border border-blue-200">
                 <p className="text-blue-800 text-xs leading-relaxed">
-                  Include your name, phone, and email on the back of the cheque so we can send your receipt.
+                  Include your name, phone, and purpose of payment on the back of the cheque so we can send your receipt.
                 </p>
               </div>
             </div>
