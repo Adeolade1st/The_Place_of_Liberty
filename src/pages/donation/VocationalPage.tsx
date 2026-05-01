@@ -14,7 +14,6 @@ const impactTiers = [
   { amount: '₦50,000', impact: 'Provides a "Startup Kit" for a graduating student' },
   { amount: '₦150,000', impact: 'Sponsors one student\'s full vocational programme' },
 ];
-
 export default function VocationalPage() {
   return (
     <div className="pt-24 min-h-screen bg-gray-50">
@@ -62,7 +61,7 @@ export default function VocationalPage() {
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/8613320/pexels-photo-8613320.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src='/creatives.jpg'
               alt="Vocational training"
               className="rounded-2xl w-full h-72 object-cover shadow-lg mb-6"
             />
@@ -83,8 +82,6 @@ export default function VocationalPage() {
             </div>
           </div>
         </div>
-
-       
 
         {/* Tracks */}
         <div className="bg-green-800 text-white rounded-2xl p-8 mb-12">
