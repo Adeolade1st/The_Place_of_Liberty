@@ -314,12 +314,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               )}
             </li>
 
-            <li>
-              <button onClick={() => handlePageClick('gallery')} className={`w-full text-left py-2 px-3 rounded-md text-sm font-medium transition-colors ${currentPage === 'gallery' ? 'bg-orange-50 text-orange-600' : 'text-gray-700 hover:bg-orange-50 hover:text-orange-600'}`}>
-                Gallery
-              </button>
-            </li>
-
+           
             {/* Donate */}
             <li>
               <button
