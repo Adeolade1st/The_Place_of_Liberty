@@ -3,7 +3,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const partners = [
   {
-    name: 'Chalak Mitra Life',
+    name: 'Mitra Life',
     logo: '/ChalkMitra-removebg-preview.png',
   },
 ];
