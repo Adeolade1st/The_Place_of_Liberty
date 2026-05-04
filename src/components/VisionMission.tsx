@@ -104,7 +104,7 @@ export default function VisionMission() {
 
           <div ref={valuesRightRef} className="relative sr-hidden-right">
             <img
-              src="/ladipo.jpeg"
+              src="/corevalue.jpg"
               alt="Teacher and child"
               className="rounded-2xl w-full h-80 md:h-[420px] object-cover shadow-xl"
             />
