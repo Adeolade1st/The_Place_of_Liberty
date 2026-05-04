@@ -34,7 +34,7 @@ export default function Hero({ onNavigate }: HeroProps) {
   const [current, setCurrent] = useState(0)
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrent((c) => (c + 1) % slides.length), 6000);
+    const timer = setInterval(() => setCurrent((c) => (c + 1) % slides.length), 9000);
     return () => clearInterval(timer);
   }, []);
 
