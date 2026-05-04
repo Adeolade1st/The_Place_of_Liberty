@@ -114,7 +114,7 @@ export default function VisionMission() {
               </p>
               <p className="text-green-700 font-semibold text-xs mt-2">— Mr. Ladipo Oluwole</p>
             </div>
-          </div
+          </div>
         </div>
       </div>
     </section>
