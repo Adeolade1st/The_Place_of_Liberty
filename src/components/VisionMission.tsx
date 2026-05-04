@@ -72,18 +72,7 @@ export default function VisionMission() {
           </div>
         </div>
 
-        {/* Memorial section */}
-        <div ref={memorialRef} className="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-10 text-center mb-16 sr-hidden-scale">
-          <div className="w-12 h-1 bg-orange-400 mx-auto rounded-full mb-6" />
-          <p className="text-gray-500 text-sm uppercase tracking-widest mb-3 font-semibold">In Loving Memory</p>
-          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-            The Very Reverend Akinola &amp; Mrs. Modupe Oluwole
-          </h3>
-          <p className="text-gray-500 text-sm leading-relaxed max-w-xl mx-auto">
-            This school stands as a testament to their faith, love, and vision for children who needed a place of liberty, hope, and light.
-          </p>
-          <div className="w-12 h-1 bg-green-700 mx-auto rounded-full mt-6" />
-        </div>
+      
 
         {/* Core Values */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
