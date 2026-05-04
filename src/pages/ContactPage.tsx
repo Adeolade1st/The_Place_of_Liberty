@@ -128,7 +128,7 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <h2 className="text-xl font-bold text-gray-900 mb-1">Send Us a Message</h2>
-                  <p className="text-gray-500 text-sm">We typically respond within 1–2 business days.</p>
+                  
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-5">
