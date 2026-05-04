@@ -126,6 +126,7 @@ export default function About() {
                 'Activities of Daily Living (ADL)',
                 'Community Integration',
                 'Free Lunch & Transportation',
+                 'In-house Medical Consultation',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
                   <span className="mt-1 w-4 h-4 rounded-full bg-orange-100 flex-shrink-0 flex items-center justify-center">
