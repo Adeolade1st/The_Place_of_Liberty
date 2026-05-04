@@ -159,9 +159,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <p>
             &copy; {new Date().getFullYear()} The Place of Liberty Nursery &amp; Primary School. All rights reserved.
           </p>
-          <p className="flex items-center gap-1">
-            Made with <Heart size={12} className="text-orange-500 fill-orange-500 mx-1" /> for the children of Nigeria
-          </p>
+          
         </div>
       </div>
     </footer>
