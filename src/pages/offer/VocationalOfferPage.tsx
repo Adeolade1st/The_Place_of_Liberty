@@ -10,7 +10,7 @@ const tracks = [
   { name: 'Craft & Beadwork', desc: 'Jewellery production, bead artistry, and handmade crafts.' },
   { name: 'Home care Essentials', desc: 'Formulation, packaging, and selling personal care products( Liquid soap & antiseptic ).' },
   { name: 'Hair Care & Braiding', desc: 'Hair care techniques for the Nigerian market.' },
-  { name: 'Mopping Stick', desc: 'Making mopping sticks for house hold use and commercial purposes.' },
+  { name: 'Mopping Stick', desc: 'Making mopping sticks for household use and commercial purposes.' },
  
  
  
