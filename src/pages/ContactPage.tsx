@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: 'School Hours',
-    lines: ['Mon – Fri: 7:30 AM – 3:00 PM', 'Sat – Sun: Closed'],
+    lines: ['Mon – Fri: 7:30 AM – 3:00 PM', 'Sat – Sun: Closed', 'Visit by appointment'],
     color: 'bg-amber-50 text-amber-600',
   },
 ];
