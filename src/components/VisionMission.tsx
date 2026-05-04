@@ -109,9 +109,7 @@ export default function VisionMission() {
               className="rounded-2xl w-full h-80 md:h-[420px] object-cover shadow-xl"
             />
             <div className="absolute -bottom-6 -left-6 md:-left-8 bg-white rounded-2xl p-5 shadow-xl max-w-xs border-l-4 border-orange-500">
-              <p className="text-gray-700 text-sm italic leading-relaxed">
-                ""And whoever welcomes one such child in my name welcomes me. Mathew 18:5"
-              </p>
+              
               <p className="text-green-700 font-semibold text-xs mt-2">— Mr. Ladipo Oluwole</p>
             </div>
           </div>
