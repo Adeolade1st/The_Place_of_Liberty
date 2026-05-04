@@ -120,7 +120,7 @@ export default function About() {
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               {[
-                'Functional Academics(Montessori Standard)',
+                'Functional Academics (Montessori Standard)',
                 'Therapy (Physio, Occupational & Speech)',
                 'Vocational Training',
                 'Activities of Daily Living (ADL)',
