@@ -213,15 +213,6 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               )}
             </li>
 
-            {/* Gallery */}
-            <li>
-              <button
-                onClick={() => handlePageClick('gallery')}
-                className={`px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors ${currentPage === 'gallery' ? 'text-orange-500' : 'hover:text-orange-500'}`}
-              >
-                Gallery
-              </button>
-            </li>
 
             {/* Donate dropdown */}
             <li className="relative">
