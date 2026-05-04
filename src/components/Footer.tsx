@@ -24,19 +24,19 @@ const donateLinks: { label: string; page: Page }[] = [
 ];
 
 const programmes = [
-  'Special Education',
+  'Functional Academics',
   'Speech Therapy',
+  'Physio Therapy',
   'Occupational Therapy',
   'Art & Music Therapy',
-  'Parent Support',
-  'After-School Care',
+
 ];
 
 const socials = [
-  { icon: Facebook, label: 'Facebook', href: '#' },
-  { icon: Twitter, label: 'Twitter / X', href: '#' },
-  { icon: Instagram, label: 'Instagram', href: '#' },
-  { icon: Youtube, label: 'YouTube', href: '#' },
+  { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61557011231497&mibextid=LQQJ4d' },
+  { icon: Twitter, label: 'Twitter / X', href: 'https://x.com/place_ofliberty?s=11' },
+  { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/place_ofliberty?igsh=eWJtZWY3OHd1aDBq&utm_source=qr' },
+  { icon: Youtube, label: 'YouTube', href: 'https://www.youtube.com/@PlaceofLiberty' },
 ];
 
 export default function Footer({ onNavigate }: FooterProps) {
