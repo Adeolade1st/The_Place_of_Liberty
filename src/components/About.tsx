@@ -120,12 +120,12 @@ export default function About() {
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               {[
-                'Certified Special Education',
+                'Functional Academics(Montessori Standard)',
                 'Therapy (Physio, Occupational & Speech)',
                 'Vocational Training',
                 'Activities of Daily Living (ADL)',
                 'Community Integration',
-                'Free Launch & Transportation',
+                'Free Lunch & Transportation',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
                   <span className="mt-1 w-4 h-4 rounded-full bg-orange-100 flex-shrink-0 flex items-center justify-center">
