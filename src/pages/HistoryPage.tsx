@@ -4,16 +4,9 @@ const timeline = [
   {
     year: 'Sep 2018 & 2020',
     title: 'Inspiration — Papa & Mama Oluwole',
-    desc: 'Place of Liberty was inspired by the Very Reverend T.A.J. Oluwole and his wife of 62 years, Mrs. Modupe Olabisi Oluwole, both of blessed memory. Both died two years apart on the same date — September 18, 2018 and September 18, 2020 respectively. They had a deep passion for charitable giving and caring for children with special needs.',
+    desc: 'Place of Liberty was established in memory of Mr. Oluwole and his wife of 62 years, Mrs. Modupe Olabisi Oluwole, both of blessed memory. Both died two years apart on the same date — September 18, 2018 and September 18, 2020 respectively. They had a deep passion for charitable giving and caring for children with special needs.',
     icon: Heart,
     color: 'bg-orange-500',
-  },
-  {
-    year: 'Oct 25, 2020',
-    title: 'The Act of Generosity That Started It All',
-    desc: 'About 6 weeks after Mama Oluwole\'s passing, Mr. Manish Patel donated $5,000 towards mama\'s favourite charity. This led to something much bigger than anyone could have predicted. The Oluwole family agreed the donation should go towards special needs children from indigent families, and decided to remodel and offer their family home at 1 Alhaji Masha as a tempoary site to the school.',
-    icon: Lightbulb,
-    color: 'bg-green-700',
   },
   {
     year: 'Apr 2021',
