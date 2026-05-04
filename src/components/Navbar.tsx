@@ -7,7 +7,6 @@ import {
 
 type Page =
   | 'home'
-  | 'gallery'
   | 'history'
   | 'contact'
   | 'who-about'
