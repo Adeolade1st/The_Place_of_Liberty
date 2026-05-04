@@ -7,7 +7,7 @@ import VisionMission from './components/VisionMission';
 import Partners from './components/Partners';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import GalleryPage from './pages/GalleryPage';
+//import GalleryPage from './pages/GalleryPage';
 import HistoryPage from './pages/HistoryPage';
 import ContactPage from './pages/ContactPage';
 import DonatePage from './pages/donation/DonatePage';
@@ -20,7 +20,6 @@ import TherapyPage from './pages/offer/TherapyPage';
 
 type Page =
   | 'home'
-  | 'gallery'
   | 'history'
   | 'contact'
   | 'who-about'
@@ -74,7 +73,7 @@ export default function App() {
             <Partners />
           </>
         )}
-        {currentPage === 'gallery' && <GalleryPage />}
+      
         {currentPage === 'history' && <HistoryPage />}
         {currentPage === 'contact' && <ContactPage />}
         {currentPage === 'who-about' && (
