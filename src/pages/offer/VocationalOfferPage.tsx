@@ -6,12 +6,11 @@ const stats = [
 ];
 
 const tracks = [
-  { name: 'Tailoring & Fashion Design', desc: 'From basic sewing to fashion production and garment finishing.' },
-  { name: 'Catering & Baking', desc: 'Food preparation, commercial baking, and hospitality skills.' },
+ 
   { name: 'Craft & Beadwork', desc: 'Jewellery production, bead artistry, and handmade crafts.' },
-  { name: 'Soap & Cosmetics Making', desc: 'Formulation, packaging, and selling personal care products.' },
-  { name: 'Hair Care & Braiding', desc: 'Professional hair care techniques for the Nigerian market.' },
-  { name: 'Shoe Making & Cobbling', desc: 'Designing, constructing, and repairing footwear.' },
+  { name: 'Home care Essentials', desc: 'Formulation, packaging, and selling personal care products( Liquid soap & antiseptic ).' },
+  { name: 'Hair Care & Braiding', desc: 'Hair care techniques for the Nigerian market.' },
+  { name: 'Mopping Stick', desc: 'Making mopping sticks for house hold use and commercial purposes.' },
  
  
  
@@ -117,7 +116,7 @@ export default function VocationalOfferPage() {
             <h3 className="font-bold text-xl">The "Launchpad" Support</h3>
           </div>
           <p className="text-green-200 text-sm mb-6 leading-relaxed">
-            Success doesn't end at graduation. High-performing alumni receive a personalised Startup Kit — the tools, equipment, and mentorship they need to launch their own business immediately after completing training.
+            Success doesn't end at graduation. Graduating students receive a personalised Startup Kit — the tools, equipment, and mentorship they need to launch their own business immediately after completing training.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {launchpadFeatures.map((f) => (
