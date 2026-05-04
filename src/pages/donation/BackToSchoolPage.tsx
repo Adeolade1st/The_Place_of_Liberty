@@ -2,8 +2,7 @@ import { BookOpen, ShoppingBag, Users, Star, Package, TrendingUp } from 'lucide-
 import DonationLayout from './DonationLayout';
 
 const stats = [
-  { icon: Users, value: '210', label: 'Children Equipped', sub: 'in the last academic year' },
-  { icon: Package, value: '210', label: 'Academic Kits', sub: 'distributed annually' },
+  { icon: Users, value: '39', label: 'Children Equipped', sub: 'in the last academic year' },
   { icon: Star, value: '94%', label: 'Attendance Increase', sub: 'among kit recipients' },
   { icon: TrendingUp, value: '3x', label: 'More Likely to Stay', sub: 'in school full term' },
 ];
@@ -21,9 +20,9 @@ const kitContents = [
 
 const impactTiers = [
   { amount: '₦5,000', impact: 'Provides stationery and supplies for one child' },
-  { amount: '₦12,000', impact: 'Buys a complete uniform set and school bag' },
-  { amount: '₦25,000', impact: 'Funds a full Academic Kit for one child' },
-  { amount: '₦100,000', impact: 'Equips four children with complete kits' },
+  { amount: '₦45,000', impact: 'Buys a complete uniform set and school bag' },
+  { amount: '₦59,500', impact: 'Funds a full Academic Kit for one child' },
+
 ];
 
 export default function BackToSchoolPage() {
