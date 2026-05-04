@@ -29,7 +29,6 @@ const programmes = [
   'Physio Therapy',
   'Occupational Therapy',
   'Art & Music Therapy',
-  'Vocational Training',
 
 ];
 

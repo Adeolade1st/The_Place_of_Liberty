@@ -32,7 +32,7 @@ export default function SpecialEdPage() {
           <GraduationCap size={28} />
         </div>
         <p className="text-orange-200 font-semibold text-sm uppercase tracking-wider mb-2">What We Offer</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Functional Academics</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Special Education</h1>
         <p className="text-orange-50 font-semibold text-lg mb-2">Montessori Standard</p>
         <p className="text-orange-100 max-w-2xl mx-auto leading-relaxed text-sm">
           Individualised Montessori-based learning that meets each child exactly where they are, unlocking potential through structure, freedom, and respect.
