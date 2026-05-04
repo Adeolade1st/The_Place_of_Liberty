@@ -107,14 +107,12 @@ export default function HistoryPage() {
               In Memory of <span className="text-green-700">Papa & Mama Oluwole</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Place of Liberty was inspired by the Very Reverend T.A.J. Oluwole and his wife of 62 years, Mrs. Modupe Olabisi Oluwole, both of blessed memory. Both died two years apart on the same date — September 18, 2018 and September 18, 2020 respectively.
+              Place of Liberty was established in memory of Mr. Oluwole and his wife of 62 years, Mrs. Modupe Olabisi Oluwole, both of blessed memory. Both died two years apart on the same date — September 18, 2018 and September 18, 2020 respectively.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               Papa and Mama Oluwole were very generous people who had a passion for charitable giving. One of their greatest passions was caring for Children with Special Needs. Until his death, papa was invited every year to give the opening prayer at the Christmas fundraising event of Ile Aanu School for the physically disabled.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              On October 25, 2020 — about 6 weeks after Mama Oluwole's death — Mr. Manish Patel donated $5,000 towards mama's favourite charity. This generous act led to something much bigger than anyone could have predicted.
-            </p>
+
           </div>
           <div className="relative">
             <img
