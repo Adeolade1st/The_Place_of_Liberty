@@ -23,7 +23,7 @@ export default function SpecialEdPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(234,88,12,0.88), rgba(194,65,12,0.93)), url('/teacherteach1.JPG')`,
+          backgroundImage: `linear-gradient(rgba(234,88,12,0.88), rgba(194,65,12,0.93))`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -59,8 +59,8 @@ export default function SpecialEdPage() {
           </div>
           <div className="relative">
             <img
-              src='/teacherteach.JPG'
-              alt="Teacher with child"
+              src='/mont.webp'
+              alt="Teacher with children"
               className="rounded-2xl w-full h-80 object-cover shadow-xl"
             />
             <div className="absolute -bottom-5 -left-5 bg-orange-500 text-white rounded-2xl p-5 shadow-xl">
