@@ -91,7 +91,7 @@ export default function MedicationPage() {
         
 
         {/* Impact tiers */}
-        <div className="bg-white rounded-2xl p-16 border border-gray-100 shadow-sm mb-12">
+        <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm mb-12">
           <h3 className="font-bold text-gray-900 text-lg mb-6 text-center">What Your Gift Does</h3>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {impactTiers.map(({ amount, label, impact }) => (
