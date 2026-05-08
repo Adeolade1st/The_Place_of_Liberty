@@ -78,7 +78,7 @@ export default function App() {
         {currentPage === 'contact' && <ContactPage />}
         {currentPage === 'who-about' && (
           <>
-            <About />
+            
             <div className="pt-20"><VisionMission /></div>
           </>
         )}
