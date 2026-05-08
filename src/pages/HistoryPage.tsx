@@ -85,7 +85,7 @@ export default function HistoryPage() {
       {/* Hero banner */}
       <div
         className="relative py-20 px-4 text-center text-white"
-        }
+        
       >
         <p className="text-orange-300 font-semibold text-sm uppercase tracking-wider mb-2">Who We Are</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
