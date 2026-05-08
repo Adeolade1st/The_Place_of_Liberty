@@ -79,7 +79,7 @@ export default function App() {
         {currentPage === 'who-about' && (
           <>
             
-            <div className="pt-20"><VisionMission /></div>
+            <div className="pt-20"></div>
           </>
         )}
         {currentPage === 'offer-special-ed' && <SpecialEdPage />}
