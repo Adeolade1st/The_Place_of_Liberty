@@ -24,9 +24,7 @@ interface NavbarProps {
 }
 
 const whoWeAreLinks: { label: string; page: Page; icon: typeof Info; desc: string }[] = [
-  { label: 'About Us', page: 'who-about', icon: Info, desc: 'Our story and founding values' },
   { label: 'Our History', page: 'history', icon: History, desc: 'From vision to a thriving school' },
-  { label: 'Vision & Mission', page: 'who-about', icon: Eye, desc: 'What drives everything we do' },
 ];
 
 const whatWeOfferLinks: { label: string; page: Page; icon: typeof GraduationCap; desc: string }[] = [
