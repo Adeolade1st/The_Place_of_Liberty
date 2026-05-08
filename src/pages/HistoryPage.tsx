@@ -116,7 +116,7 @@ export default function HistoryPage() {
           </div>
           <div className="relative">
             <img
-              src="/Playtime.jpeg"
+              src="/staff.webp"
               alt="Children at Place of Liberty"
               className="rounded-2xl w-full h-80 md:h-96 object-cover shadow-xl"
             />
