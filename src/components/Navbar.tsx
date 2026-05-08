@@ -183,9 +183,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               {activeDropdown === 'who' && (
                 <DropdownPanel
                   items={[
-                    { label: 'About Us', page: 'who-about', icon: Info, desc: 'Our story and founding values' },
                     { label: 'Our History', page: 'history', icon: History, desc: 'From vision to a thriving school' },
-                    { label: 'Vision & Mission', page: 'who-about', icon: Eye, desc: 'What drives everything we do' },
                   ]}
                   currentPage={currentPage}
                   onSelect={handlePageClick}
