@@ -279,9 +279,9 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               {mobileExpanded === 'who' && (
                 <div className="ml-3 mt-1 space-y-1">
                   {[
-                    { label: 'About Us', page: 'who-about' as Page, icon: Info },
+                   
                     { label: 'Our History', page: 'history' as Page, icon: History },
-                    { label: 'Vision & Mission', page: 'who-about' as Page, icon: Eye },
+                   
                   ].map(({ label, page, icon: Icon }) => (
                     <button key={`${page}-${label}`} onClick={() => handlePageClick(page)} className="w-full flex items-center gap-2 py-2 px-3 rounded-md text-sm text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors">
                       <Icon size={14} />{label}
