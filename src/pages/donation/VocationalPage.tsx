@@ -9,10 +9,8 @@ const stats = [
 ];
 
 const impactTiers = [
-  { amount: '₦5,000', impact: 'Buys one set of vocational tools for a student' },
-  { amount: '₦15,000', impact: 'Funds one month of specialist vocational training' },
   { amount: '₦50,000', impact: 'Provides a "Startup Kit" for a graduating student' },
-  { amount: '₦150,000', impact: 'Sponsors one student\'s full vocational programme' },
+  { amount: '₦300,000', impact: 'Full vocational programme sponsor for a month' },
 ];
 export default function VocationalPage() {
   return (

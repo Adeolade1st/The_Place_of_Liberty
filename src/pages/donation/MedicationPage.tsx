@@ -2,26 +2,21 @@ import { Heart, ShieldCheck, Activity, Users, Calendar, TrendingUp } from 'lucid
 import DonationLayout from './DonationLayout';
 
 const stats = [
-  { icon: Users, value: '63', label: 'Children Sponsored', sub: 'receiving consistent medication' },
+  { icon: Users, value: '39', label: 'Children Sponsored', sub: 'receiving consistent medication' },
   { icon: Calendar, value: '12', label: 'Months Coverage', sub: 'per full sponsorship' },
   { icon: ShieldCheck, value: '100%', label: 'Healthcare Reach', sub: 'for sponsored children' },
   { icon: TrendingUp, value: '78%', label: 'Health Improvement', sub: 'reported by families' },
 ];
 
 const impactTiers = [
-  { amount: '₦3,000', label: 'Monthly', impact: 'Sponsors one child\'s monthly medication costs' },
-  { amount: '₦8,000', label: 'Quarterly', impact: 'Three months of uninterrupted treatment for a child' },
-  { amount: '₦30,000', label: 'Yearly', impact: 'Full-year medication coverage for one child' },
-  { amount: '₦60,000', label: 'Two Children', impact: 'A full year of healthcare for two children' },
+  { amount: '₦50,000', label: 'Monthly', impact: '1 month medication coverage for one child' },
+  { amount: '₦150,000', label: 'Quartely', impact: '3 months medication for one child' },
 ];
 
 const conditions = [
   'Epilepsy / Seizure Disorders',
-  'Autism-related medications',
-  'ADHD management',
-  'Cerebral Palsy support',
   'Nutritional supplements',
-  'Sensory processing aids',
+  'Health & Personal Care'
 ];
 
 export default function MedicationPage() {
