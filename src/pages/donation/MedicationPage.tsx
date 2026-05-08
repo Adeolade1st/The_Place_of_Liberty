@@ -16,7 +16,7 @@ const impactTiers = [
 const conditions = [
   'Epilepsy / Seizure Disorders',
   'Nutritional supplements',
-  'Health & Personal Care'
+  'Health & Personal Care',
 ];
 
 export default function MedicationPage() {
