@@ -99,7 +99,7 @@ export default function BackToSchoolPage() {
         {/* Impact tiers */}
         <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm mb-12">
           <h3 className="font-bold text-gray-900 text-lg mb-6 text-center">What Your Gift Does</h3>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {impactTiers.map(({ amount, impact }) => (
               <div key={amount} className="bg-amber-50 rounded-xl p-5 text-center border border-amber-100">
                 <div className="text-2xl font-bold text-gray-900 mb-3">{amount}</div>
