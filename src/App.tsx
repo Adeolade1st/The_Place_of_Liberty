@@ -75,8 +75,7 @@ export default function App() {
         )}
       
         {currentPage === 'history' && <HistoryPage />}
-        {currentPage === 'contact' && <ContactPage />}
-       
+        {currentPage === 'contact' && <ContactPage />}     
         {currentPage === 'offer-special-ed' && <SpecialEdPage />}
         {currentPage === 'offer-vocational' && <VocationalOfferPage />}
         {currentPage === 'offer-therapy' && <TherapyPage />}
