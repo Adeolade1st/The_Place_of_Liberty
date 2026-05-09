@@ -63,7 +63,7 @@ export default function VocationalPage() {
               alt="Vocational training"
               className="rounded-2xl w-full h-72 object-cover shadow-lg mb-6"
             />
-            {/* Impact tiers */}
+            {/* Impact tiers */
             <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
               <div className="flex items-center gap-2 mb-4">
                 <BookOpen size={18} className="text-orange-500" />
