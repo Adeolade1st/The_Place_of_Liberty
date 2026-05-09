@@ -32,7 +32,7 @@ export default function BackToSchoolPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-           backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.63)), url('/teach.JPG')`,
+           backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.63))`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
