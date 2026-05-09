@@ -11,7 +11,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone Number',
-    lines: ['+234 806 063 6704 , +234 802 312 6250'],
+    lines: ['+234 806 063 6704 , 
+            +234 802 312 6250'],
     color: 'bg-green-50 text-green-700',
   },
   {
@@ -151,7 +152,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       type="email"
-                      placeholder="info@placeofliberty.com"
+                      placeholder="you@example.com"
                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 transition-colors"
                     />
                   </div>
@@ -165,7 +166,7 @@ export default function ContactPage() {
                       value={form.phone}
                       onChange={handleChange}
                       type="tel"
-                      placeholder="+234 806 063 6704 or +234 802 312 6250"
+                      placeholder="080.."
                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 transition-colors"
                     />
                   </div>
