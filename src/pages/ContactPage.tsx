@@ -165,7 +165,7 @@ export default function ContactPage() {
                       value={form.phone}
                       onChange={handleChange}
                       type="tel"
-                      placeholder="08"
+                      placeholder="080..."
                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 transition-colors"
                     />
                   </div>
