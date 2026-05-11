@@ -93,7 +93,7 @@ export default function About() {
               />
               <img
                 src="/groupimg_(1).webp"
-                alt="Children playing"
+                alt="group photo"
                 className="rounded-2xl w-full h-48 object-cover shadow-lg mt-4"
               />
             </div>
