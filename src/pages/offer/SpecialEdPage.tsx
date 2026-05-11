@@ -32,7 +32,7 @@ export default function SpecialEdPage() {
           <GraduationCap size={28} />
         </div>
         <p className="text-orange-200 font-semibold text-sm uppercase tracking-wider mb-2">What We Offer</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4"></h1>Functional Academics
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Functional Academics</h1>
         <p className="text-orange-50 font-semibold text-lg mb-2">Montessori Standard</p>
         <p className="text-orange-100 max-w-2xl mx-auto leading-relaxed text-sm">
           Individualised Montessori-based learning that meets each child exactly where they are, unlocking potential through structure, freedom, and respect.
@@ -68,7 +68,7 @@ export default function SpecialEdPage() {
               <p className="text-orange-100 text-xs">Teacher-to-child ratio</p>
             </div>
           </div>
-        </div
+        </div>
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
