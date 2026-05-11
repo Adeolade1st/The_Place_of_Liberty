@@ -88,7 +88,7 @@ export default function VocationalOfferPage() {
             <img
               src='/voca.webp'
               alt="Vocational training session"
-              className="rounded-2xl w-full h-72 object-cover shadow-xl mb-6"
+              className="rounded-2xl w-full h-56 object-cover shadow-lg"
             />
           </div>
         </div>
