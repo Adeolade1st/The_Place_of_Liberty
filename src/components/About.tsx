@@ -83,7 +83,7 @@ export default function About() {
               />
               <img
                 src="/therapy.webp"
-                alt="Teacher with students"
+                alt="Therapy session"
                 className="rounded-2xl w-full h-56 object-cover shadow-lg mt-8"
               />
               <img
@@ -92,7 +92,7 @@ export default function About() {
                 className="rounded-2xl w-full h-48 object-cover object-top shadow-lg -mt-4"
               />
               <img
-                src="/group.JPG"
+                src="/groupimg.webp"
                 alt="Children playing"
                 className="rounded-2xl w-full h-48 object-cover shadow-lg mt-4"
               />
