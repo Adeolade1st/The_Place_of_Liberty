@@ -144,7 +144,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             <span className="flex items-center gap-1"><Phone size={12} />+234 806 063 6704, +234 802 312 6250
 
 </span>
-            <span className="flex items-center gap-1"><Mail size={12} />example@pol.edu.ng</span>
+            <span className="flex items-center gap-1"><Mail size={12} />info@placeofliberty.com</span>
           </div>
           <span className="flex items-center gap-1"><MapPin size={12} /> 1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos</span>
         </div>
