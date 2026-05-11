@@ -77,8 +77,8 @@ export default function About() {
           <div ref={imagesRef} className="relative sr-hidden-left">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/voca.webp"
-                alt="Girl threading wool"
+                src="/feedind.webp"
+                alt="Feeding girl"
                 className="rounded-2xl w-full h-48 object-cover shadow-lg"
               />
               <img
