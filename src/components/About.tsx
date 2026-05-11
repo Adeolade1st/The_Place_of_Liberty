@@ -94,7 +94,7 @@ export default function About() {
               <img
                 src="/mopmaking.webp"
                 alt="Girl making mop"
-                className="rounded-2xl w-full h-48 object-cover shadow-lg mt-4"
+                className="rounded-2xl w-full h-56 object-cover shadow-lg mt-4"
               />
             </div>
             {/* Badge */}
