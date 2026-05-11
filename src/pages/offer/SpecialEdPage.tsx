@@ -59,7 +59,7 @@ export default function SpecialEdPage() {
           </div>
           <div className="relative">
             <img
-              src='/teacherteach.JPG'
+              src='/mont.webp'
               alt="Teacher with child"
               className="rounded-2xl w-full h-80 object-cover shadow-xl"
             />
