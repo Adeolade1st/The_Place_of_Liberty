@@ -74,44 +74,7 @@ export default function VisionMission() {
 
       
 
-        {/* Core Values */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div ref={valuesLeftRef} className="sr-hidden-left">
-            <p className="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-2">
-              What Drives Us
-            </p>
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Our Core Values
-            </h3>
-            <div className="space-y-4">
-              {[
-                { label: 'Inclusion', desc: 'Every child belongs and is valued.' },
-                { label: 'Compassion', desc: 'We serve with love, patience, and understanding.' },
-                { label: 'Excellence', desc: 'We commit to the highest standards of care and education.' },
-                { label: 'Integrity', desc: 'We are transparent, ethical, and accountable.' },
-                { label: 'Faith', desc: 'Grounded in Christ-centered principles of service and love.' },
-              ].map(({ label, desc }) => (
-                <div key={label} className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-orange-50 transition-colors duration-200 group">
-                  <CheckCircle size={22} className="text-orange-500 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-0.5">{label}</h4>
-                    <p className="text-gray-500 text-sm">{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div ref={valuesRightRef} className="relative sr-hidden-right">
-            <img
-              src="/corevalue.jpg"
-              alt="Core value"
-              className="rounded-2xl w-full h-80 md:h-[420px] object-cover shadow-xl"
-            />
-            <div className="absolute -bottom-6 -left-6 md:-left-8 bg-white rounded-2xl p-5 shadow-xl max-w-xs border-l-4 border-orange-500">
-              
-            </div>
-          </div>
+       
         </div>
       </div>
     </section>
