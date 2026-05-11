@@ -92,7 +92,7 @@ export default function About() {
                 className="rounded-2xl w-full h-48 object-cover object-top shadow-lg -mt-4"
               />
               <img
-                src="/proupimg.webp"
+                src="/game.webp"
                 alt="group photo"
                 className="rounded-2xl w-full h-48 object-cover shadow-lg mt-4"
               />
