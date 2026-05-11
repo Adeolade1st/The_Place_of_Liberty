@@ -68,7 +68,7 @@ export default function SpecialEdPage() {
               <p className="text-orange-100 text-xs">Teacher-to-child ratio</p>
             </div>
           </div>
-        </div>
+        </div
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
