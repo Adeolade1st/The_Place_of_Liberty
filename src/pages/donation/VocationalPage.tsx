@@ -10,7 +10,7 @@ const stats = [
 
 const impactTiers = [
   { amount: '₦50,000', impact: 'Provides a "Startup Kit" for a graduating student' },
-  { amount: '₦300,000', impact: 'Sponsors all student\'s full vocational programme' },
+  { amount: '₦300,000', impact: 'Sponsor all student\'s full vocational programme' },
 ];
 export default function VocationalPage() {
   return (
