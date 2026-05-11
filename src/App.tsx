@@ -75,7 +75,13 @@ export default function App() {
         )}
       
         {currentPage === 'history' && <HistoryPage />}
-        {currentPage === 'contact' && <ContactPage />}     
+        {currentPage === 'contact' && <ContactPage />}
+        {currentPage === 'who-about' && (
+          <>
+            <About />
+            <div className="pt-20"><VisionMission /></div>
+          </>
+        )}
         {currentPage === 'offer-special-ed' && <SpecialEdPage />}
         {currentPage === 'offer-vocational' && <VocationalOfferPage />}
         {currentPage === 'offer-therapy' && <TherapyPage />}

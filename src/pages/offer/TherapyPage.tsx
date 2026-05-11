@@ -63,11 +63,11 @@ export default function TherapyPage() {
     <div className="pt-24 min-h-screen bg-white">
       {/* Hero */}
       <div
-        className="relative py-20 px-4 text-center text-white overflow-hidden"
+        className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.75))`,
+          backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.63)), url('/mouththerapy.jpg')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center top',
+          backgroundPosition: 'center',
         }}
       >
         <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/20 mb-4 mx-auto">
@@ -118,19 +118,7 @@ export default function TherapyPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{title}</h3>
                 <p className={`text-sm font-semibold mb-3 ${color.split(' ')[1]}`}>{heading}</p>
-                <p className="text-gray-600 text-sm leading-relaxed mb-5">{desc}</p>
-                {i === 0 && (
-                  <div className="relative rounded-xl overflow-hidden shadow-md">
-                    <img
-                      src="/therapy.webp"
-                      alt="Physiotherapy session at Place of Liberty"
-                      className="w-full h-100 object-cover object-top"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-teal-900/80 to-transparent px-4 py-3">
-                      <p className="text-white text-xs font-medium">Physiotherapy session — Place of Liberty</p>
-                    </div>
-                  </div>
-                )}
+                <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
               </div>
               <div className={i % 2 !== 0 ? 'md:order-1' : ''}>
                 <h4 className="font-bold text-gray-900 mb-3 text-sm">What We Address:</h4>

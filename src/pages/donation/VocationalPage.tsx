@@ -9,8 +9,10 @@ const stats = [
 ];
 
 const impactTiers = [
+  { amount: '₦5,000', impact: 'Buys one set of vocational tools for a student' },
+  { amount: '₦15,000', impact: 'Funds one month of specialist vocational training' },
   { amount: '₦50,000', impact: 'Provides a "Startup Kit" for a graduating student' },
-  { amount: '₦300,000', impact: 'Full vocational programme sponsor for a month' },
+  { amount: '₦150,000', impact: 'Sponsors one student\'s full vocational programme' },
 ];
 export default function VocationalPage() {
   return (
@@ -19,7 +21,7 @@ export default function VocationalPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(134,28,12,0.88), rgba(94,25,12,0.63))`,
+          backgroundImage: `linear-gradient(rgba(134,28,12,0.88), rgba(94,25,12,0.63)), url('/creatives.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -59,7 +61,7 @@ export default function VocationalPage() {
           </div>
           <div>
             <img
-              src='/voca.webp'
+              src='/creatives.jpg'
               alt="Vocational training"
               className="rounded-2xl w-full h-72 object-cover shadow-lg mb-6"
             />
@@ -88,7 +90,7 @@ export default function VocationalPage() {
             <h3 className="font-bold text-lg">Vocational Tracks Offered</h3>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {['Craft & Beadwork', 'Home Care Production(Soap & Disinfectant)', 'Belt', 'Shoe Polishing',].map((track) => (
+            {['Tailoring & Fashion', 'Catering & Baking', 'Craft & Beadwork', 'Soap Making', 'Hair Care', 'Shoe Making',].map((track) => (
               <div key={track} className="bg-green-700/50 rounded-xl px-4 py-2.5 text-sm text-green-100 text-center">
                 {track}
               </div>

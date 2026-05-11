@@ -31,7 +31,7 @@ export default function VocationalOfferPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(134,28,12,0.88), rgba(94,25,12,0.63))`,
+          backgroundImage: `linear-gradient(rgba(134,28,12,0.88), rgba(94,25,12,0.63)), url('/creatives.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -86,9 +86,9 @@ export default function VocationalOfferPage() {
           </div>
           <div>
             <img
-              src='/voca.webp'
+              src='/creatives.jpg'
               alt="Vocational training session"
-              className="rounded-2xl w-100 h-auto object-cover shadow-lg"
+              className="rounded-2xl w-full h-72 object-cover shadow-xl mb-6"
             />
           </div>
         </div>

@@ -86,7 +86,7 @@ export default function HistoryPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93))`,
+          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93)), url(/class.jpeg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -116,7 +116,7 @@ export default function HistoryPage() {
           </div>
           <div className="relative">
             <img
-              src="/staff.webp"
+              src="/Playtime.jpeg"
               alt="Children at Place of Liberty"
               className="rounded-2xl w-full h-80 md:h-96 object-cover shadow-xl"
             />

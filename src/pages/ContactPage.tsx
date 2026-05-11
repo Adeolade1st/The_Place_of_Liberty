@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email Address',
-    lines: ['info@placeofliberty.com'],
+    lines: ['example@pol.edu.ng', 'admissions@theplaceofiberty.edu.ng'],
     color: 'bg-blue-50 text-blue-600',
   },
   {
@@ -58,7 +58,7 @@ export default function ContactPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93))`,
+          backgroundImage: `linear-gradient(rgba(21,128,61,0.88), rgba(21,128,61,0.93)), url(https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1600)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -165,7 +165,7 @@ export default function ContactPage() {
                       value={form.phone}
                       onChange={handleChange}
                       type="tel"
-                      placeholder="080..."
+                      placeholder="+234 806 063 6704 or +234 802 312 6250"
                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 transition-colors"
                     />
                   </div>

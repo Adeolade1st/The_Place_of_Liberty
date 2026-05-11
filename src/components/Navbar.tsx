@@ -24,7 +24,9 @@ interface NavbarProps {
 }
 
 const whoWeAreLinks: { label: string; page: Page; icon: typeof Info; desc: string }[] = [
+  { label: 'About Us', page: 'who-about', icon: Info, desc: 'Our story and founding values' },
   { label: 'Our History', page: 'history', icon: History, desc: 'From vision to a thriving school' },
+  { label: 'Vision & Mission', page: 'who-about', icon: Eye, desc: 'What drives everything we do' },
 ];
 
 const whatWeOfferLinks: { label: string; page: Page; icon: typeof GraduationCap; desc: string }[] = [
@@ -142,7 +144,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             <span className="flex items-center gap-1"><Phone size={12} />+234 806 063 6704, +234 802 312 6250
 
 </span>
-            <span className="flex items-center gap-1"><Mail size={12} />info@placeofliberty.com</span>
+            <span className="flex items-center gap-1"><Mail size={12} />example@pol.edu.ng</span>
           </div>
           <span className="flex items-center gap-1"><MapPin size={12} /> 1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos</span>
         </div>
@@ -183,7 +185,9 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               {activeDropdown === 'who' && (
                 <DropdownPanel
                   items={[
+                    { label: 'About Us', page: 'who-about', icon: Info, desc: 'Our story and founding values' },
                     { label: 'Our History', page: 'history', icon: History, desc: 'From vision to a thriving school' },
+                    { label: 'Vision & Mission', page: 'who-about', icon: Eye, desc: 'What drives everything we do' },
                   ]}
                   currentPage={currentPage}
                   onSelect={handlePageClick}
@@ -279,9 +283,9 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               {mobileExpanded === 'who' && (
                 <div className="ml-3 mt-1 space-y-1">
                   {[
-                   
+                    { label: 'About Us', page: 'who-about' as Page, icon: Info },
                     { label: 'Our History', page: 'history' as Page, icon: History },
-                   
+                    { label: 'Vision & Mission', page: 'who-about' as Page, icon: Eye },
                   ].map(({ label, page, icon: Icon }) => (
                     <button key={`${page}-${label}`} onClick={() => handlePageClick(page)} className="w-full flex items-center gap-2 py-2 px-3 rounded-md text-sm text-gray-600 hover:bg-orange-50 hover:text-orange-600 transition-colors">
                       <Icon size={14} />{label}

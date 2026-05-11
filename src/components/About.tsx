@@ -77,23 +77,23 @@ export default function About() {
           <div ref={imagesRef} className="relative sr-hidden-left">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/voca.webp"
-                alt="Feeding girl"
+                src="/teacherteach.JPG"
+                alt="Children learning"
                 className="rounded-2xl w-full h-56 object-cover shadow-lg"
               />
               <img
-                src="/therapy.webp"
-                alt="Therapy session"
+                src="/pics2.JPG"
+                alt="Teacher with students"
                 className="rounded-2xl w-full h-56 object-cover shadow-lg mt-8"
               />
               <img
-                src="/mont.webp"
+                src="/teamwork.JPG"
                 alt="Team work"
                 className="rounded-2xl w-full h-48 object-cover object-top shadow-lg -mt-4"
               />
               <img
-                src="/game.webp"
-                alt="group photo"
+                src="/group.JPG"
+                alt="Children playing"
                 className="rounded-2xl w-full h-48 object-cover shadow-lg mt-4"
               />
             </div>

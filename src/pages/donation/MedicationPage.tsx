@@ -2,21 +2,26 @@ import { Heart, ShieldCheck, Activity, Users, Calendar, TrendingUp } from 'lucid
 import DonationLayout from './DonationLayout';
 
 const stats = [
-  { icon: Users, value: '39', label: 'Children Sponsored', sub: 'receiving consistent medication' },
+  { icon: Users, value: '63', label: 'Children Sponsored', sub: 'receiving consistent medication' },
   { icon: Calendar, value: '12', label: 'Months Coverage', sub: 'per full sponsorship' },
   { icon: ShieldCheck, value: '100%', label: 'Healthcare Reach', sub: 'for sponsored children' },
   { icon: TrendingUp, value: '78%', label: 'Health Improvement', sub: 'reported by families' },
 ];
 
 const impactTiers = [
-  { amount: '₦50,000', label: 'Monthly', impact: '1 month medication coverage for one child' },
-  { amount: '₦150,000', label: 'Quartely', impact: '3 months medication coverage for one child' },
+  { amount: '₦3,000', label: 'Monthly', impact: 'Sponsors one child\'s monthly medication costs' },
+  { amount: '₦8,000', label: 'Quarterly', impact: 'Three months of uninterrupted treatment for a child' },
+  { amount: '₦30,000', label: 'Yearly', impact: 'Full-year medication coverage for one child' },
+  { amount: '₦60,000', label: 'Two Children', impact: 'A full year of healthcare for two children' },
 ];
 
 const conditions = [
   'Epilepsy / Seizure Disorders',
+  'Autism-related medications',
+  'ADHD management',
+  'Cerebral Palsy support',
   'Nutritional supplements',
-  'Health & Personal Care',
+  'Sensory processing aids',
 ];
 
 export default function MedicationPage() {
@@ -26,7 +31,7 @@ export default function MedicationPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-         backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.63))`,
+         backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.63)), url('/mouththerapy.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -93,7 +98,7 @@ export default function MedicationPage() {
         {/* Impact tiers */}
         <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm mb-12">
           <h3 className="font-bold text-gray-900 text-lg mb-6 text-center">What Your Gift Does</h3>
-          <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {impactTiers.map(({ amount, label, impact }) => (
               <div key={amount} className="bg-red-50 rounded-xl p-5 text-center border border-red-100">
                 <div className="text-2xl font-bold text-gray-900 mb-0.5">{amount}</div>

@@ -23,7 +23,7 @@ export default function SpecialEdPage() {
       <div
         className="relative py-20 px-4 text-center text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(234,88,12,0.88), rgba(194,65,12,0.93))`,
+          backgroundImage: `linear-gradient(rgba(234,88,12,0.88), rgba(194,65,12,0.93)), url('/teacherteach1.JPG')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -32,7 +32,7 @@ export default function SpecialEdPage() {
           <GraduationCap size={28} />
         </div>
         <p className="text-orange-200 font-semibold text-sm uppercase tracking-wider mb-2">What We Offer</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Functional Academics</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4"></h1>Functional Academics
         <p className="text-orange-50 font-semibold text-lg mb-2">Montessori Standard</p>
         <p className="text-orange-100 max-w-2xl mx-auto leading-relaxed text-sm">
           Individualised Montessori-based learning that meets each child exactly where they are, unlocking potential through structure, freedom, and respect.
@@ -59,8 +59,8 @@ export default function SpecialEdPage() {
           </div>
           <div className="relative">
             <img
-              src='/mont.webp'
-              alt="Teacher with children"
+              src='/teacherteach.JPG'
+              alt="Teacher with child"
               className="rounded-2xl w-full h-80 object-cover shadow-xl"
             />
             <div className="absolute -bottom-5 -left-5 bg-orange-500 text-white rounded-2xl p-5 shadow-xl">
