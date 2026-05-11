@@ -88,7 +88,7 @@ export default function VocationalOfferPage() {
             <img
               src='/creatives.jpg'
               alt="Vocational training session"
-              className="rounded-2xl w-full h-72 object-cover shadow-xl mb-6"
+              className="rounded-2xl w-full h-100 object-cover shadow-xl mb-6"
             />
           </div>
         </div>
