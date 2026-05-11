@@ -59,7 +59,7 @@ export default function VocationalPage() {
           </div>
           <div>
             <img
-              src='/mop.webp'
+              src='/voca.webp'
               alt="Vocational training"
               className="rounded-2xl w-full h-72 object-cover shadow-lg mb-6"
             />
