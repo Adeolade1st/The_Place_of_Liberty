@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email Address',
-    lines: ['example@pol.edu.ng', 'admissions@theplaceofiberty.edu.ng'],
+    lines: ['info@placeofliberty.com'],
     color: 'bg-blue-50 text-blue-600',
   },
   {
@@ -165,7 +165,7 @@ export default function ContactPage() {
                       value={form.phone}
                       onChange={handleChange}
                       type="tel"
-                      placeholder="+234 806 063 6704 or +234 802 312 6250"
+                      placeholder="080..."
                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 transition-colors"
                     />
                   </div>
