@@ -145,8 +145,8 @@ export default function Footer({ onNavigate }: FooterProps) {
             </li>
             <li className="flex items-center gap-3">
               <Mail size={16} className="text-orange-500 flex-shrink-0" />
-              <a href="mailto:info@theplaceofiberty.edu.ng" className="text-gray-400 hover:text-orange-400 text-sm transition-colors break-all">
-                example@pol.edu.ng
+              <a href="mailto:info@placeofiberty.com" className="text-gray-400 hover:text-orange-400 text-sm transition-colors break-all">
+                info@placeofliberty.com
               </a>
             </li>
           </ul>
