@@ -74,10 +74,6 @@ export default function VisionMission() {
 
       
 
-              
-        
-        
-        </div>
       </div>
     </section>
   );
