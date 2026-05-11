@@ -70,7 +70,7 @@ export default function Testimonials() {
   const t = testimonials[current];
 
   return (
-    <section ref={sectionRef} id="testimonials" className="py-16 md:py-24 bg-gray-20 sr-hidden">
+    <section ref={sectionRef} id="testimonials" className="py-16 md:py-24 bg-gray-50 sr-hidden">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
