@@ -65,7 +65,7 @@ export default function TherapyPage() {
       <div
         className="relative py-20 px-4 text-center text-white overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.75)), url('/therapy.webp')`,
+          backgroundImage: `linear-gradient(rgba(14,116,144,0.88), rgba(8,78,100,0.75))`,
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}
@@ -124,7 +124,7 @@ export default function TherapyPage() {
                     <img
                       src="/therapy.webp"
                       alt="Physiotherapy session at Place of Liberty"
-                      className="w-full h-56 object-cover object-top"
+                      className="w-full h-100 object-cover object-top"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-teal-900/80 to-transparent px-4 py-3">
                       <p className="text-white text-xs font-medium">Physiotherapy session — Place of Liberty</p>
