@@ -79,7 +79,7 @@ export default function About() {
               <img
                 src="/voca.webp"
                 alt="Girl threading wool"
-                className="rounded-2xl w-full h-40 object-cover shadow-lg"
+                className="rounded-2xl w-full h-50 object-cover shadow-lg"
               />
               <img
                 src="/therapy.webp"
