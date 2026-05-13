@@ -115,7 +115,11 @@ export default function HistoryPage() {
 
           </div>
           <div className="relative">
-        
+            <img
+              src="/staff.webp"
+              alt="Children at Place of Liberty"
+              className="rounded-2xl w-full h-80 md:h-96 object-cover shadow-xl"
+            />
             <div className="absolute -bottom-6 -right-6 md:-right-8 bg-orange-500 text-white rounded-2xl p-5 shadow-xl max-w-[200px]">
               <p className="text-3xl font-bold">Sep 18</p>
               <p className="text-orange-100 text-sm mt-1 leading-tight">Founder's Day — in memory of Papa & Mama Oluwole</p>
