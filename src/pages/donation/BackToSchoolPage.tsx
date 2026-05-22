@@ -72,7 +72,7 @@ export default function BackToSchoolPage() {
           </div>
           <div>
             <img
-              src='/teach.webp'
+              src='/pics2.webp'
               alt="Children with school supplies"
               className="rounded-2xl w-full h-72 object-cover shadow-lg mb-6"
             />
