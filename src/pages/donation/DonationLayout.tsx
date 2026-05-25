@@ -130,7 +130,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               </div>
               <div className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-200">
                 <p className="text-amber-800 text-xs leading-relaxed">
-                  After depositing, send your teller/reference to <strong>ino@placeofiberty.com</strong> or call <strong>+234 802 312 6250</strong>.
+                  After depositing, send your teller/reference to <strong>info@placeofiberty.com</strong> or call <strong>+234 802 312 6250</strong>.
                 </p>
               </div>
             </div>
