@@ -164,7 +164,7 @@ export default function Donation() {
                 </div>
                 <div className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-200">
                   <p className="text-amber-800 text-xs leading-relaxed">
-                    After making your deposit, please send your teller/payment reference to <strong>donations@theplaceofiberty.edu.ng</strong> or call <strong>+234 (0) 800 000 0000</strong> to confirm your donation.
+                    After making your deposit, please send your teller/payment reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250</strong> to confirm your donation.
                   </p>
                 </div>
               </div>
