@@ -42,14 +42,43 @@ const subjects = [
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', phone: '', subject: '', message: '' });
-
+const [isSubmitting, setIsSubmitting] = useState(false);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+
+    const formData = new FormData();
+    // 1. Put your actual Web3Forms access key inside the quotes below
+    formData.append("access_key", "81270070-1204-4f2a-9408-001fed6441d1");
+    formData.append("name", form.name);
+    formData.append("email", form.email);
+    formData.append("phone", form.phone);
+    formData.append("subject", form.subject);
+    formData.append("message", form.message);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        alert("Submission failed: " + data.message);
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Network error. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -128,7 +157,6 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <h2 className="text-xl font-bold text-gray-900 mb-1">Send Us a Message</h2>
-                  
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-5">
@@ -184,6 +212,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
+                {/* Fixed and completed Message block below */}
                 <div>
                   <label className="block text-xs font-semibold text-gray-700 mb-1.5">Message <span className="text-red-400">*</span></label>
                   <textarea
@@ -199,10 +228,11 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-xl transition-colors text-sm"
+                  disabled={isSubmitting}
+                  className="w-full sm:w-auto bg-green-700 text-white font-semibold px-6 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-green-800 transition-colors disabled:opacity-50"
                 >
-                  <Send size={16} />
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  <Send size={18} />
                 </button>
               </form>
             )}
