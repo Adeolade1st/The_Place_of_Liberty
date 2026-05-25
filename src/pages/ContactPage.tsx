@@ -115,7 +115,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
                 <p className="text-gray-500 text-sm max-w-sm leading-relaxed">
-                  Thank you for reaching out. A member of our team will get back to you within 1–2 business days.
+                  Thank you for reaching out. A member of our team will get back to you soon.
                 </p>
                 <button
                   onClick={() => { setSubmitted(false); setForm({ name: '', email: '', phone: '', subject: '', message: '' }); }}
