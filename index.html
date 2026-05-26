@@ -1,30 +1,78 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- 1. Core Meta declarations MUST come first -->
+    <!-- 1. Core Browser Metadata (MUST be at the absolute top) -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Place of Liberty</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="The Place of Liberty" />
 
-    <!-- 2. Favicon links go safely below meta configurations -->
-    <!-- Standard Browser Tab Icon -->
+    <!-- 2. Primary SEO & Google Search Optimization -->
+    <title>The Place of Liberty | Special Needs School in Surulere, Lagos</title>
+    <meta name="description" content="The Place of Liberty is a premier special needs school in Surulere, Lagos. Offering specialized education, therapy services, vocational programs, and dedicated support for children." />
+    <meta name="keywords" content="special needs school lagos, autism school surulere, therapy services for children lagos, special education nigeria, vocational school for disabled lagos, down syndrome school lagos" />
+    <link rel="canonical" href="https://placeofliberty.org" />
+
+    <!-- 3. Open Graph Link Preview Optimization (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://placeofliberty.org" />
+    <meta property="og:title" content="The Place of Liberty - Empowering Special Needs Children" />
+    <meta property="og:description" content="Discover professional special education, speech therapy, and vocational training programs in Surulere, Lagos." />
+    <meta property="og:image" content="https://placeofliberty.orgfavicon-32x32.png" />
+
+    <!-- 4. Twitter Card Layout Meta Configuration -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Place of Liberty | Special Needs School Lagos" />
+    <meta name="twitter:description" content="Empowering special needs children through expert therapy and individualized learning structures in Lagos." />
+    <meta name="twitter:image" content="https://placeofliberty.orgfavicon-32x32.png" />
+
+    <!-- 5. Google Typography Streaming APIs -->
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link href="https://googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- 6. Custom Tab Favicon Pack (Using fixed lowercase 'x' paths) -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
-    
-    <!-- Modern Browsers (Now matching lowercase letter x) -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
-    
-    <!-- Apple Devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
-    
-    <!-- Android/PWA Manifest -->
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- 7. Google Structured JSON-LD Local Schema Engine For Schools -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "School",
+      "name": "The Place of Liberty",
+      "description": "A specialized pre-school and primary education facility providing free academic learning, speech therapy, and vocational instruction for special needs children in Surulere.",
+      "url": "https://placeofliberty.com",
+      "telephone": "+2348060636704",
+      "email": "info@placeofliberty.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1, Alhaji Masha Road, Onisemo Junction, Surulere",
+        "addressLocality": "Lagos",
+        "addressRegion": "Lagos State",
+        "addressCountry": "NG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "6.5015",
+        "longitude": "3.3524"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "07:30",
+          "closes": "15:00"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
+    <!-- React Component Application Delivery Root -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
