@@ -1,26 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Standard Browser Tab Icon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  
-  <!-- Modern Browsers -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-  
-  <!-- Apple Devices -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  
-  <!-- Android/PWA Manifest -->
-  <link rel="manifest" href="/site.webmanifest" />
+    <!-- 1. Core Meta declarations MUST come first -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Place of Liberty</title>
     <meta property="og:image" content="https://bolt.new/static/og_default.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+
+    <!-- 2. Favicon links go safely below meta configurations -->
+    <!-- Standard Browser Tab Icon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
     
+    <!-- Modern Browsers (Now matching lowercase letter x) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
+    
+    <!-- Apple Devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
+    
+    <!-- Android/PWA Manifest -->
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <div id="root"></div>
