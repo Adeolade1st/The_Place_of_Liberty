@@ -57,7 +57,7 @@ export default function Hero({ onNavigate }: HeroProps) {
       ))}
 
       {/* Dark green overlay — matching reference design */}
-      <div className="absolute inset-0 bg-green-900/75" />
+      <div className="absolute inset-0 bg-green-200/75" />
 
       {/* Centered content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
@@ -108,7 +108,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             onClick={() => setCurrent(i)}
             aria-label={`Slide ${i + 1}`}
             className={`h-1.5 rounded-full transition-all duration-400 ${
-              i === current ? 'bg-amber-800 w-10' : 'bg-white/30 w-3 hover:bg-white/50'
+              i === current ? 'bg-amber-400 w-10' : 'bg-white/30 w-3 hover:bg-white/50'
             }`}
           />
         ))}
