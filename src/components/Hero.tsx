@@ -27,7 +27,7 @@ const slides = [
     title: 'Your Support',
     highlight: 'Changes Lives',
     subtitle: 'Join us to make a difference.',
-    color: 'text-white-700',
+    color: 'text-white-100',
   },
 ];
 
