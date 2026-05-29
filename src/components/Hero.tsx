@@ -57,7 +57,7 @@ export default function Hero({ onNavigate }: HeroProps) {
       ))}
 
       {/* Dark green overlay — matching reference design */}
-      <div className="absolute inset-0 bg-green-900/25" />
+      <div className="absolute inset-0 bg-green-900/45" />
 
       {/* Centered content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
