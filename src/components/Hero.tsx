@@ -108,7 +108,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             onClick={() => setCurrent(i)}
             aria-label={`Slide ${i + 1}`}
             className={`h-1.5 rounded-full transition-all duration-400 ${
-              i === current ? 'bg-amber-400 w-10' : 'bg-white/30 w-3 hover:bg-white/50'
+              i === current ? 'bg-amber-800 w-10' : 'bg-white/30 w-3 hover:bg-white/50'
             }`}
           />
         ))}
