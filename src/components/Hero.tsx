@@ -27,7 +27,7 @@ const slides = [
     title: 'Your Support',
     highlight: 'Changes Lives',
     subtitle: 'Join us to make a difference.',
-    color: 'text-white-100 px-3',
+    
   },
 ];
 
@@ -57,8 +57,7 @@ export default function Hero({ onNavigate }: HeroProps) {
         </div>
       ))}
 
-      {/* Dark green overlay — matching reference design */}
-      <div className="absolute inset-0 bg-green-900/45" />
+    
 
       {/* Centered content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
