@@ -75,7 +75,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           <span className="text-amber-400">{slide.highlight}</span>
         </h1>
 
-        <p className="text-white/400 text-base md:text-lg leading-relaxed mb-10 max-w-xl">
+        <p className="text-white/100 text-base md:text-lg leading-relaxed mb-10 max-w-xl">
           {slide.subtitle}
         </p>
 
