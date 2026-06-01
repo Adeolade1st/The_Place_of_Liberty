@@ -113,7 +113,7 @@ export default function SpecialEdPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-4 flex-shrink-0">
-            <a href="mailto:info@theplaceofiberty.edu.ng" className="bg-white text-orange-500 hover:bg-orange-50 font-bold px-7 py-3 rounded-full transition-colors text-sm">
+            <a href="mailto:info@placeofiberty.com" className="bg-white text-orange-500 hover:bg-orange-50 font-bold px-7 py-3 rounded-full transition-colors text-sm">
               Contact Admissions
             </a>
           </div>
