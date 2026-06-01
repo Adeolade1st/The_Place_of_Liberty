@@ -47,7 +47,7 @@ export default function Hero({ onNavigate }: HeroProps) {
       {slides.map((s, i) => (
         <div
           key={i}
-          className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-50' : 'opacity-0'}`}
         >
           <img
             src={s.image}
