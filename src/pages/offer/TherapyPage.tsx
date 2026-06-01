@@ -162,7 +162,7 @@ export default function TherapyPage() {
               Not sure where to start? Contact us to arrange an initial consultation with one of our therapists.
             </p>
           </div>
-          <a href="mailto:info@theplaceofiberty.edu.ng" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-7 py-3 rounded-full transition-colors text-sm flex-shrink-0">
+          <a href="mailto:info@placeofiberty.com" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-7 py-3 rounded-full transition-colors text-sm flex-shrink-0">
             Book a Consultation
           </a>
         </div>
