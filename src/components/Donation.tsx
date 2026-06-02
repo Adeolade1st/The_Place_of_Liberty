@@ -271,7 +271,7 @@ export default function Donation() {
                   {[
                     { label: 'Pay to', value: 'The Place of Liberty Nursery & Primary School' },
                     { label: 'Delivery Address', value: '1 Liberty Road, Surulere, Lagos, Nigeria' },
-                    { label: 'Contact', value: '+234 (0) 800 000 0000' },
+                    { label: 'Contact', value: '+234 (0) 802 312 6250' },
                   ].map(({ label, value }) => (
                     <div key={label} className="flex items-start justify-between bg-gray-50 rounded-xl px-5 py-3 gap-4">
                       <div>
