@@ -88,7 +88,7 @@ export default function VocationalPage() {
             <h3 className="font-bold text-lg">Vocational Tracks Offered</h3>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {['Craft & Beadwork', 'Soap Making(Liquid soap & Antiseptic wash)', 'Hair Care', 'Mopping Stick Making', 'Shoe Polishing',].map((track) => (
+            {['Craft & Beadwork', 'Soap Making(Liquid soap & Antiseptic wash)', 'Home Cleaning', 'Mopping Stick Making', 'Car Washing',].map((track) => (
               <div key={track} className="bg-green-700/50 rounded-xl px-4 py-2.5 text-sm text-green-100 text-center">
                 {track}
               </div>
