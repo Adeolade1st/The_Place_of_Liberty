@@ -2,7 +2,7 @@ import { Briefcase, Wrench, TrendingUp, Users, Award, DollarSign, CheckCircle } 
 
 const stats = [
   { icon: Users, value: '17', label: 'Currently Enrolled', sub: 'since programme launch' },
-  { icon: Award, value: '7', label: 'Vocational Tracks', sub: 'available to students' },
+  { icon: Award, value: '6', label: 'Vocational Tracks', sub: 'available to students' },
 ];
 
 const tracks = [
@@ -10,7 +10,6 @@ const tracks = [
   { name: 'Craft & Beadwork', desc: 'Jewellery production, bead artistry, and handmade crafts.' },
   { name: 'Home care Essentials', desc: 'Formulation, packaging, and selling personal care products( Liquid soap & antiseptic ).' },
   { name: 'Mopping Stick', desc: 'Making mopping sticks for household use and commercial purposes.' },
-  { name: 'Car Washing', desc: '' },
   { name: 'House Cleaning', desc: 'Training in residential and commercial cleaning techniques, use of cleaning equipment, and workplace hygiene standards.' },
 { name: 'Car Washing', desc: 'Hands-on training in vehicle washing, detailing, polishing, and customer service for car care businesses.' },
 { name: 'Laundry', desc: 'Practical training in washing, drying, ironing, fabric care, and laundry business operations.' },
