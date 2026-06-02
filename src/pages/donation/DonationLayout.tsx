@@ -3,18 +3,17 @@ import { Building2, CreditCard, Smartphone, FileText, Copy, CheckCheck } from 'l
 import { useState } from 'react';
 
 const bankDetails = [
-  { label: 'Bank Name', value: 'Zenith Bank PLC' },
-  { label: 'Account Name', value: 'The Place of Liberty School' },
-  { label: 'Account Number', value: '1234567890' },
-  { label: 'Sort Code', value: '057' },
+  { label: 'Bank Name', value: 'Eco Bank' },
+  { label: 'Account Name', value: 'The Place of Liberty Vocational School' },
+  { label: 'Account Number', value: '1960064465' },
 ];
 
 const ussdCodes = [
-  { bank: 'GTBank', code: '*737*1*Amount*1234567890#' },
-  { bank: 'Zenith Bank', code: '*966*Amount*1234567890#' },
-  { bank: 'Access Bank', code: '*901*Amount*1234567890#' },
-  { bank: 'First Bank', code: '*894*Amount*1234567890#' },
-  { bank: 'UBA', code: '*919*3*Amount*1234567890#' },
+  { bank: 'GTBank', code: '*737*1*Amount*1960064465#' },
+  { bank: 'Zenith Bank', code: '*966*Amount*1960064465#' },
+  { bank: 'Access Bank', code: '*901*Amount*1960064465#' },
+  { bank: 'First Bank', code: '*894*Amount*1960064465#' },
+  { bank: 'UBA', code: '*919*3*Amount*1960064465#' },
 ];
 
 type PayMethod = 'bank' | 'card' | 'transfer' | 'cheque';
@@ -196,7 +195,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               </div>
               <div className="p-4 bg-green-50 rounded-xl border border-green-200">
                 <p className="text-green-800 text-xs leading-relaxed">
-                  Or transfer directly via your mobile app using account <strong>1234567890</strong> at <strong>Zenith Bank</strong>.
+                  Or transfer directly via your mobile app using account <strong>1960064465</strong> at <strong>Eco Bank</strong>.
                 </p>
               </div>
             </div>
@@ -209,7 +208,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
                 {[
                   { label: 'Pay to', value: 'The Place of Liberty Nursery & Primary School' },
                   { label: 'Delivery Address', value: '1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos' },
-                  { label: 'Contact', value: '+234 (0) 800 000 0000' },
+                  { label: 'Contact', value: '+234 (0) 802 312 6250' },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex items-start justify-between bg-gray-50 rounded-xl px-5 py-3 gap-4">
                     <div>
