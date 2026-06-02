@@ -269,7 +269,7 @@ export default function Donation() {
                 </p>
                 <div className="space-y-3 mb-5">
                   {[
-                    { label: 'Pay to', value: 'The Place of Liberty Nursery & Primary School' },
+                    { label: 'Pay to', value: 'The Place of Liberty Vocational School' },
                     { label: 'Delivery Address', value: '1 Liberty Road, Surulere, Lagos, Nigeria' },
                     { label: 'Contact', value: '+234 (0) 802 312 6250' },
                   ].map(({ label, value }) => (
