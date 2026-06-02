@@ -97,7 +97,7 @@ export default function WhatWeDo({ onNavigate }: Props) {
             </p>
           </div>
           <a
-            href="mailto:info@placeofiberty.com"
+            href="mailto:info@theplaceofiberty.edu.ng"
             className="flex-shrink-0 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition-colors duration-200 whitespace-nowrap"
           >
             Contact Admissions
