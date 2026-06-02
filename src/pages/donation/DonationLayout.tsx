@@ -206,7 +206,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               <h4 className="font-bold text-gray-800 mb-4">Cheque Donation</h4>
               <div className="space-y-3 mb-5">
                 {[
-                  { label: 'Pay to', value: 'The Place of Liberty Nursery & Primary School' },
+                  { label: 'Pay to', value: 'The Place of Liberty Vocational School' },
                   { label: 'Delivery Address', value: '1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos' },
                   { label: 'Contact', value: '+234 (0) 802 312 6250' },
                 ].map(({ label, value }) => (
