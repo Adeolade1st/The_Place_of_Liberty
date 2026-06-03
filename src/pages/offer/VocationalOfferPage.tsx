@@ -9,10 +9,10 @@ const tracks = [
  
   { name: 'Craft & Beadwork', desc: 'Jewellery production, bead artistry, and handmade crafts.' },
   { name: 'Home care Essentials', desc: 'Formulation, packaging, and selling personal care products( Liquid soap & antiseptic ).' },
+  { name: 'Hair Care & Braiding', desc: 'Hair care techniques for the Nigerian market.' },
   { name: 'Mopping Stick', desc: 'Making mopping sticks for household use and commercial purposes.' },
-  { name: 'House Cleaning', desc: 'Training in residential and commercial cleaning techniques, use of cleaning equipment, and workplace hygiene standards.' },
-{ name: 'Car Washing', desc: 'Hands-on training in vehicle washing, detailing, polishing, and customer service for car care businesses.' },
-{ name: 'Laundry', desc: 'Practical training in washing, drying, ironing, fabric care, and laundry business operations.' },
+ 
+ 
  
 ];
 
@@ -137,7 +137,7 @@ export default function VocationalOfferPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-4 flex-shrink-0">
-            <a href="mailto:info@placeofiberty.com" className="bg-white text-orange-500 hover:bg-orange-50 font-bold px-7 py-3 rounded-full transition-colors text-sm">
+            <a href="mailto:info@theplaceofiberty.edu.ng" className="bg-white text-orange-500 hover:bg-orange-50 font-bold px-7 py-3 rounded-full transition-colors text-sm">
               Contact Us
             </a>
           </div>

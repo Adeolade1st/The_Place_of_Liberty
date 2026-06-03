@@ -15,7 +15,7 @@ const initiatives = [
     color: 'from-green-700 to-green-900',
     badge: 'Empowerment',
     badgeColor: 'bg-green-100 text-green-800',
-    stat: '15 trainees receving support',
+    stat: '47 graduates supported',
   },
   {
     page: 'donate-medication' as Page,
@@ -25,7 +25,7 @@ const initiatives = [
     color: 'from-red-700 to-red-900',
     badge: 'Healthcare',
     badgeColor: 'bg-red-100 text-red-800',
-    stat: '30 children receiving medication',
+    stat: '63 children receiving medication',
   },
   {
     page: 'donate-backtoschool' as Page,
@@ -35,7 +35,7 @@ const initiatives = [
     color: 'from-amber-700 to-amber-900',
     badge: 'Education',
     badgeColor: 'bg-amber-100 text-amber-800',
-    stat: '45 children equipped last year',
+    stat: '210 children equipped last year',
   },
 ];
 

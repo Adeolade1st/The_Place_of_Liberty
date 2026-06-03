@@ -231,7 +231,7 @@ export default function HistoryPage() {
           </div>
           <div className="flex flex-wrap gap-4 flex-shrink-0">
             <a
-              href="mailto:info@placeofiberty.com"
+              href="mailto:info@theplaceofiberty.edu.ng"
               className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-7 py-3 rounded-full transition-colors text-sm"
             >
               Contact Us
