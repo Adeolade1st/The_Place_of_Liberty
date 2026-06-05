@@ -2,7 +2,7 @@ import { Briefcase, Wrench, TrendingUp, Users, BookOpen, Award } from 'lucide-re
 import DonationLayout from './DonationLayout';
 
 const stats = [
-  { icon: Users, value: '47', label: 'Graduates Supported', sub: 'since programme launch' },
+  { icon: Users, value: '17', label: 'Trainees Currently Supported', sub: 'since programme launch' },
   { icon: TrendingUp, value: '89%', label: 'Economic Independence', sub: 'rate within 6 months' },
   { icon: Award, value: '6', label: 'Vocational Tracks', sub: 'available to students' },
 ];
