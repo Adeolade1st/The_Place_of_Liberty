@@ -208,7 +208,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
                 {[
                   { label: 'Pay to', value: 'The Place of Liberty Nursery & Primary School' },
                   { label: 'Delivery Address', value: '1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos' },
-                  { label: 'Contact', value: '+234 (0) 703 025 2923', or '234 802 312 6250' },
+                  { label: 'Contact', value: '+234 (0) 703 025 2923 or 234 802 312 6250' },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex items-start justify-between bg-gray-50 rounded-xl px-5 py-3 gap-4">
                     <div>
