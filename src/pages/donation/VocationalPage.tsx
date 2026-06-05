@@ -3,9 +3,8 @@ import DonationLayout from './DonationLayout';
 
 const stats = [
   { icon: Users, value: '47', label: 'Graduates Supported', sub: 'since programme launch' },
-  { icon: Briefcase, value: '32', label: 'Businesses Started', sub: 'by our alumni' },
   { icon: TrendingUp, value: '89%', label: 'Economic Independence', sub: 'rate within 6 months' },
-  { icon: Award, value: '12', label: 'Vocational Tracks', sub: 'available to students' },
+  { icon: Award, value: '6', label: 'Vocational Tracks', sub: 'available to students' },
 ];
 
 const impactTiers = [
@@ -88,7 +87,7 @@ export default function VocationalPage() {
             <h3 className="font-bold text-lg">Vocational Tracks Offered</h3>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {['Craft & Beadwork', 'Soap Making(Liquid soap & Antiseptic wash)', 'Hair Care', 'Mopping Stick Making', 'Shoe Polishing',].map((track) => (
+            {['Craft & Beadwork', 'Soap Making(Liquid soap & Antiseptic wash)', 'House Cleaning', 'Mopping Stick Making', 'Car Washing','Laundry'].map((track) => (
               <div key={track} className="bg-green-700/50 rounded-xl px-4 py-2.5 text-sm text-green-100 text-center">
                 {track}
               </div>
