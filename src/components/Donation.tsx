@@ -6,7 +6,7 @@ const amounts = [1000, 2500, 5000, 10000, 25000, 50000];
 type Method = 'bank' | 'card' | 'transfer' | 'cheque';
 
 const methods: { id: Method; label: string; icon: typeof Building2; desc: string }[] = [
-  { id: 'bank', label: 'Bank Deposit', icon: Building2, desc: 'Pay directly into our bank account at any branch.' },
+  { id: 'bank', label: 'Bank Transfer', icon: Building2, desc: 'Pay directly into our bank account at any branch.' },
   { id: 'card', label: 'Card Payment', icon: CreditCard, desc: 'Pay securely with Visa, Mastercard, or Verve card.' },
   { id: 'transfer', label: 'USSD / Transfer', icon: Smartphone, desc: 'Instant bank transfer via USSD or mobile banking app.' },
   { id: 'cheque', label: 'Cheque', desc: 'Send a cheque to our school address.', icon: FileText },
@@ -163,7 +163,7 @@ export default function Donation() {
                 </div>
                 <div className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-200">
                   <p className="text-amber-800 text-xs leading-relaxed">
-                    After making your deposit, please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration/description field. Then send your teller/payment reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250</strong> to confirm your donation.
+                    After making your deposit, please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration/description field. Then send your teller/payment reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250 or +234 703 025 2923</strong> to confirm your donation.
                   </p>
                 </div>
               </div>
@@ -271,7 +271,7 @@ export default function Donation() {
                   {[
                     { label: 'Pay to', value: 'Place of Liberty Vocational School' },
                     { label: 'Delivery Address', value: '1 Liberty Road, Surulere, Lagos, Nigeria' },
-                    { label: 'Contact', value: '+234 (0) 703 025 2923' },
+                    { label: 'Contact', value: '+234 802 312 6250 or +234 (0) 703 025 2923' },
                   ].map(({ label, value }) => (
                     <div key={label} className="flex items-start justify-between bg-gray-50 rounded-xl px-5 py-3 gap-4">
                       <div>
