@@ -161,7 +161,7 @@ export default function Donation() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-200"
+                <div className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-200
                   <p className="text-amber-800 text-xs leading-relaxed">
                     After making your deposit, please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration/description field. Then send your teller/payment reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250 or +234 703 025 2923</strong> to confirm your donation.
                   </p>
