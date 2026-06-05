@@ -13,18 +13,17 @@ const methods: { id: Method; label: string; icon: typeof Building2; desc: string
 ];
 
 const bankDetails = [
-  { label: 'Bank Name', value: 'Zenith Bank PLC' },
-  { label: 'Account Name', value: 'The Place of Liberty School' },
-  { label: 'Account Number', value: '1234567890' },
-  { label: 'Sort Code', value: '057' },
+  { label: 'Bank Name', value: 'Eco Bank' },
+  { label: 'Account Name', value: 'Place of Liberty Vocational School' },
+  { label: 'Account Number', value: '1960064465' },
 ];
 
 const ussdCodes = [
-  { bank: 'GTBank', code: '*737*1*Amount*1234567890#' },
-  { bank: 'Zenith Bank', code: '*966*Amount*1234567890#' },
-  { bank: 'Access Bank', code: '*901*Amount*1234567890#' },
-  { bank: 'First Bank', code: '*894*Amount*1234567890#' },
-  { bank: 'UBA', code: '*919*3*Amount*1234567890#' },
+  { bank: 'GTBank', code: '*737*1*Amount*1960064465#' },
+  { bank: 'Eco Bank', code: '*326*Amount*1960064465#' },
+  { bank: 'Access Bank', code: '*901*Amount*1960064465#' },
+  { bank: 'First Bank', code: '*894*Amount*1960064465#' },
+  { bank: 'UBA', code: '*919*3*Amount*1960064465#' },
 ];
 
 function CopyBtn({ value }: { value: string }) {
@@ -256,7 +255,7 @@ export default function Donation() {
                 </div>
                 <div className="p-4 bg-green-50 rounded-xl border border-green-200">
                   <p className="text-green-800 text-xs leading-relaxed">
-                    You can also transfer directly via your mobile banking app using our account number <strong>1234567890</strong> at <strong>Zenith Bank</strong>. Use your name as the narration.
+                    You can also transfer directly via your mobile banking app using our account number <strong>1960064465</strong> at <strong>Eco Bank</strong>. Use your name as the narration.
                   </p>
                 </div>
               </div>
