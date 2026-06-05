@@ -129,7 +129,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               </div>
               <div className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-200">
                 <p className="text-amber-800 text-xs leading-relaxed">
-                  After depositing, send your teller/reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250</strong>.
+                  After depositing, please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration/description field. Then send your teller/reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250</strong>.
                 </p>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               </div>
               <div className="p-4 bg-green-50 rounded-xl border border-green-200">
                 <p className="text-green-800 text-xs leading-relaxed">
-                  Or transfer directly via your mobile app using account <strong>1960064465</strong> at <strong>Eco Bank</strong>.
+                  Or transfer directly via your mobile app using account <strong>1960064465</strong> at <strong>Eco Bank</strong>. Please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration field.
                 </p>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               </div>
               <div className="p-4 bg-blue-50 rounded-xl border border-blue-200">
                 <p className="text-blue-800 text-xs leading-relaxed">
-                  Include your name, phone, and purpose of payment on the back of the cheque so we can send your receipt.
+                  Include your name, phone, and <strong>purpose of payment</strong> on the back of the cheque so we can send your receipt.
                 </p>
               </div>
             </div>

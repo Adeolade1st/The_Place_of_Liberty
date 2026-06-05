@@ -163,7 +163,7 @@ export default function Donation() {
                 </div>
                 <div className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-200">
                   <p className="text-amber-800 text-xs leading-relaxed">
-                    After making your deposit, please send your teller/payment reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250</strong> to confirm your donation.
+                    After making your deposit, please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration/description field. Then send your teller/payment reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250</strong> to confirm your donation.
                   </p>
                 </div>
               </div>
@@ -255,7 +255,7 @@ export default function Donation() {
                 </div>
                 <div className="p-4 bg-green-50 rounded-xl border border-green-200">
                   <p className="text-green-800 text-xs leading-relaxed">
-                    You can also transfer directly via your mobile banking app using our account number <strong>1960064465</strong> at <strong>Eco Bank</strong>. Use your name as the narration.
+                    You can also transfer directly via your mobile banking app using our account number <strong>1960064465</strong> at <strong>Eco Bank</strong>. Please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration field.
                   </p>
                 </div>
               </div>
@@ -269,9 +269,9 @@ export default function Donation() {
                 </p>
                 <div className="space-y-3 mb-5">
                   {[
-                    { label: 'Pay to', value: 'The Place of Liberty Nursery & Primary School' },
+                    { label: 'Pay to', value: 'Place of Liberty Vocational School' },
                     { label: 'Delivery Address', value: '1 Liberty Road, Surulere, Lagos, Nigeria' },
-                    { label: 'Contact', value: '+234 (0) 800 000 0000' },
+                    { label: 'Contact', value: '+234 (0) 703 025 2923' },
                   ].map(({ label, value }) => (
                     <div key={label} className="flex items-start justify-between bg-gray-50 rounded-xl px-5 py-3 gap-4">
                       <div>
@@ -284,7 +284,7 @@ export default function Donation() {
                 </div>
                 <div className="p-4 bg-blue-50 rounded-xl border border-blue-200">
                   <p className="text-blue-800 text-xs leading-relaxed">
-                    Please include your name, phone number, and email address on the back of the cheque or in an accompanying letter so we can send you an acknowledgement receipt.
+                    Please include your name, phone number, and <strong>purpose of payment</strong> on the back of the cheque or in an accompanying letter so we can send you an acknowledgement receipt.
                   </p>
                 </div>
               </div>
