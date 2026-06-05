@@ -129,7 +129,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               </div>
               <div className="mt-4 p-4 bg-amber-50 rounded-xl border border-amber-200">
                 <p className="text-amber-800 text-xs leading-relaxed">
-                  After depositing, please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration/description field. Then send your teller/reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250</strong>.
+                  After depositing, please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration/description field. Then send your teller/reference to <strong>info@placeofliberty.com</strong> or call <strong>+234 802 312 6250 or +234 703 025 2923</strong>.
                 </p>
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
               </div>
               <div className="p-4 bg-green-50 rounded-xl border border-green-200">
                 <p className="text-green-800 text-xs leading-relaxed">
-                  Or transfer directly via your mobile app using account <strong>1960064465</strong> at <strong>Eco Bank</strong>. Please <strong>specify the purpose of payment</strong> (e.g. "Donation — Place of Liberty") in the narration field.
+                  Or transfer directly via your mobile app using account <strong>1960064465</strong> at <strong>Eco Bank</strong>. Please <strong>specify the purpose of payment</strong> (e.g. "Donation — "Support for vocation") in the narration field.
                 </p>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function DonationLayout({ title, accentColor, children }: Props) 
                 {[
                   { label: 'Pay to', value: 'The Place of Liberty Nursery & Primary School' },
                   { label: 'Delivery Address', value: '1, Alhaji Masha Road, Onisemo Junction, Surulere, Lagos' },
-                  { label: 'Contact', value: '+234 (0) 800 000 0000' },
+                  { label: 'Contact', value: '+234 (0) 703 025 2923', or '234 802 312 6250' },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex items-start justify-between bg-gray-50 rounded-xl px-5 py-3 gap-4">
                     <div>
