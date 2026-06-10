@@ -1,15 +1,15 @@
 import { Phone, Mail, MapPin, Heart, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
-type Page = 'home' | 'history' | 'contact' | 'about' | 'offer-special-ed' | 'offer-vocational' | 'offer-therapy' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool' |'vision-mission';
+type Page = 'home' | 'history' | 'contact' | 'who-about' | 'offer-special-ed' | 'offer-vocational' | 'offer-therapy' | 'donate' | 'donate-vocational' | 'donate-medication' | 'donate-backtoschool';
 
 interface FooterProps {
   onNavigate: (page: Page, sectionId?: string) => void;
 }
 
 const quickLinks: { label: string; page?: Page; sectionId?: string }[] = [
-  { label: 'About Us', page: 'about' },
+  { label: 'About Us', page: 'home' },
   { label: 'Our History', page: 'history' },
-  { label: 'Vision & Mission', page: 'vision-mission' },
+  { label: 'Vision & Mission', page: 'home' },
   { label: 'What We Offer', sectionId: 'what-we-do' },
   { label: 'Our Partners', sectionId: 'partners' },
   { label: 'Contact Us', page: 'contact' },
