@@ -41,7 +41,10 @@ export default function Hero({ onNavigate }: HeroProps) {
 
   const slide = slides[current];
 
- // Line 45: Updated container heights
+  return (
+    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden">
+
+// Line 45: Updated container heights
 <section id="home" className="relative h-[100dvh] min-h-[500px] md:min-h-[600px] overflow-hidden">
   {/* Background slides */}
   {slides.map((s, i) => (
@@ -57,6 +60,9 @@ export default function Hero({ onNavigate }: HeroProps) {
       />
     </div>
   ))}
+
+      
+      ))}
 
     
 
