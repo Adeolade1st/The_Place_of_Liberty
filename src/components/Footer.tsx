@@ -7,9 +7,9 @@ interface FooterProps {
 }
 
 const quickLinks: { label: string; page?: Page; sectionId?: string }[] = [
-  { label: 'About Us', page: 'about' },
+  { label: 'About Us', page: 'home' },
   { label: 'Our History', page: 'history' },
-  { label: 'Vision & Mission', page: 'about' },
+  { label: 'Vision & Mission', page: 'home' },
   { label: 'What We Offer', sectionId: 'what-we-do' },
   { label: 'Our Partners', sectionId: 'partners' },
   { label: 'Contact Us', page: 'contact' },
