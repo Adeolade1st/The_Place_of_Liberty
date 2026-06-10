@@ -41,30 +41,23 @@ export default function Hero({ onNavigate }: HeroProps) {
 
   const slide = slides[current];
 
+
   return (
-    <section id="home" className="relative h-screen min-h-[600px] overflow-hidden">
-
-// Line 45: Updated container heights
-<section id="home" className="relative h-[100dvh] min-h-[500px] md:min-h-[600px] overflow-hidden">
-  {/* Background slides */}
-  {slides.map((s, i) => (
-    <div
-      key={i}
-      className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
-    >
-      <img
-        src={s.image}
-        alt={s.title}
-        {/* Line 55: Responsive focal point alignment */}
-        className="w-full h-full object-cover object-center sm:object-center" 
-      />
-    </div>
-  ))}
-
-      
+    <section id="home" className="relative h-[100dvh] min-h-[500px] md:min-h-[600px] overflow-hidden">
+      {/* Background slides */}
+      {slides.map((s, i) => (
+        <div
+          key={i}
+          className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <img
+            src={s.image}
+            alt={s.title}
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
       ))}
 
-    
 
       {/* Centered content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
