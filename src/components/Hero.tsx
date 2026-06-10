@@ -40,6 +40,7 @@ export default function Hero({ onNavigate }: HeroProps) {
   }, []);
 
   const slide = slides[current];
+
   return (
     <section id="home" className="relative h-[100dvh] min-h-[550px] md:min-h-[600px] overflow-hidden">
       {/* Background slides */}
@@ -87,6 +88,7 @@ export default function Hero({ onNavigate }: HeroProps) {
     </section>
   );
 
+    
 
       {/* Centered content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
