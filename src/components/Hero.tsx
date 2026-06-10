@@ -40,10 +40,8 @@ export default function Hero({ onNavigate }: HeroProps) {
   }, []);
 
   const slide = slides[current];
-
-
   return (
-    <section id="home" className="relative h-[100dvh] min-h-[500px] md:min-h-[600px] overflow-hidden">
+    <section id="home" className="relative h-[100dvh] min-h-[550px] md:min-h-[600px] overflow-hidden">
       {/* Background slides */}
       {slides.map((s, i) => (
         <div
@@ -53,10 +51,41 @@ export default function Hero({ onNavigate }: HeroProps) {
           <img
             src={s.image}
             alt={s.title}
-            className="w-full h-full object-cover object-center"
+            {/* Focuses on the right side where the subjects are on mobile */}
+            className="w-full h-full object-cover object-right md:object-center"
           />
+          {/* Dark overlay to make white/orange text pop on bright backgrounds */}
+          <div className="absolute inset-0 bg-black/40 md:bg-black/30" />
         </div>
       ))}
+
+      {/* Centered content wrapper */}
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto">
+        <span className="text-sm md:text-lg font-semibold text-orange-400 uppercase tracking-wider mb-2">
+          Education is a right, not a privilege
+        </span>
+        
+        {/* Responsive text scaling */}
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+          Unlocking Every <span className="text-orange-400">Child's Potential</span>
+        </h1>
+        
+        <p className="text-sm md:text-xl text-gray-100 max-w-2xl mb-8 leading-relaxed">
+          Therapy, vocational training, and tuition-free learning for indigent families in Lagos.
+        </p>
+
+        {/* Stacked buttons on mobile, side-by-side on desktop */}
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-6 sm:px-0">
+          <button className="w-full sm:w-auto px-8 py-3 bg-orange-400 hover:bg-orange-500 text-white font-bold rounded-full transition-all">
+            DISCOVER MORE
+          </button>
+          <button className="w-full sm:w-auto px-8 py-3 border-2 border-white hover:bg-white hover:text-black text-white font-bold rounded-full transition-all">
+            SUPPORT US
+          </button>
+        </div>
+      </div>
+    </section>
+  );
 
 
       {/* Centered content */}
