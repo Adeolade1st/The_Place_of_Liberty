@@ -13,7 +13,7 @@ const slides = [
     title: 'Give Every Child The',
     highlight: 'Gift of Education',
     subtitle: 'A free school for children with special needs — powered by love, faith, and community.',
-    position: 'object-center'
+    position: 'object-center' // Centered focal point so the frame content stays readable
   },
   {
     image: '/Playtime.jpeg',
@@ -21,7 +21,7 @@ const slides = [
     title: 'Unlocking Every',
     highlight: "Child's Potential",
     subtitle: 'Therapy, vocational training, and tuition-free learning for indigent families in Lagos.',
-    position: 'object-right md:object-center'
+    position: 'object-right md:object-center' // Shifts right on mobile to focus on the child/therapist
   },
   {
     image: '/CHILDREN.jpg',
@@ -29,21 +29,19 @@ const slides = [
     title: 'Your Support',
     highlight: 'Changes Lives',
     subtitle: 'Join us to make a difference.',
-    position: 'object-center'
+    position: 'object-center' // Standard balanced landscape alignment
   },
 ];
 
 export default function Hero({ onNavigate }: HeroProps) {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0)
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((c) => (c + 1) % slides.length);
-    }, 9000);
+    const timer = setInterval(() => setCurrent((c) => (c + 1) % slides.length), 9000);
     return () => clearInterval(timer);
   }, []);
 
-  const currentSlide = slides[current] || slides[0];
+  const slide = slides[current];
 
   return (
     <section id="home" className="relative h-[100dvh] min-h-[550px] md:min-h-[600px] overflow-hidden">
@@ -55,30 +53,36 @@ export default function Hero({ onNavigate }: HeroProps) {
         >
           <img
             src={s.image}
-            alt={s.title || 'Background Slide'}
+            alt={s.title}
+            {/* Dynamically pulls individual image adjustments */}
             className={`w-full h-full object-cover ${s.position || 'object-center'}`}
           />
+          {/* Enhanced overlay contrast mask */}
           <div className="absolute inset-0 bg-black/55 md:bg-black/40" />
         </div>
       ))}
 
       {/* Centered content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto">
-        <p className="text-amber-400 italic text-base md:text-lg font-medium mb-4">
-          {currentSlide.tag}
+        {/* Italic tagline — gold/amber */}
+        <p
+          className="text-amber-400 italic text-base md:text-lg font-medium mb-4"
+        >
+          {slide.tag}
         </p>
 
+        {/* Main headline — fully responsive typography layout */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-6">
-          {currentSlide.title}
+          {slide.title}
           <br />
-          <span className="text-amber-400">{currentSlide.highlight}</span>
+          <span className="text-amber-400">{slide.highlight}</span>
         </h1>
 
         <p className="text-white text-sm md:text-lg font-medium leading-relaxed mb-8 max-w-xl">
-          {currentSlide.subtitle}
+          {slide.subtitle}
         </p>
 
-        {/* CTA buttons */}
+        {/* CTA buttons — stacked layout on small screens, row on desktop */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto px-6 sm:px-0">
           <a
             href="#about"
